@@ -1,0 +1,70 @@
+<style>
+#slide-timer {
+  position: fixed;
+  bottom: 12px;
+  left: 16px;
+  z-index: 9999;
+  font-family: 'Inter', monospace;
+  font-size: 1.8em;        /* เปลี่ยนจาก 0.75em → 1.2em */
+  font-weight: 700;
+  color: rgba(0,188,212,0.85);
+  background: rgba(8,18,40,0.75);
+  border: 1px solid rgba(0,188,212,0.25);
+  padding: 0.3em 0.8em;   /* เพิ่ม padding ให้ดูใหญ่ขึ้นด้วย */
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(4px);
+  transition: color 0.3s;
+}
+#slide-timer.warn { color: #FFA726; border-color: rgba(255,167,38,0.3); }
+#slide-timer.over { color: #EF5350; border-color: rgba(239,83,80,0.3); }
+</style>
+
+<div id="slide-timer">⏱ 00:00</div>
+
+<script>
+(function(){
+  let start = null;
+  let raf;
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  function tick(){
+    if(!start) return;
+    const elapsed = Math.floor((Date.now() - start) / 1000);
+    const m = Math.floor(elapsed / 60);
+    const s = elapsed % 60;
+    const el = document.getElementById('slide-timer');
+    if(!el) return;
+    el.textContent = '⏱ ' + pad(m) + ':' + pad(s);
+
+    // สีเปลี่ยนตามเวลา
+    el.className = elapsed >= 600 ? 'over'   // > 10 นาที = แดง
+                 : elapsed >= 420 ? 'warn'   // > 7 นาที = เหลือง
+                 : '';
+
+    raf = requestAnimationFrame(tick);
+  }
+
+  // เริ่มจับเวลาตอนสไลด์แรกแสดง
+  document.addEventListener('DOMContentLoaded', function(){
+    const deck = window.Reveal;
+    if(!deck) return;
+
+    deck.on('slidechanged', function(e){
+      if(e.indexh === 0 && e.indexv === 0 && !start){
+        start = Date.now();
+        tick();
+      }
+    });
+
+    // fallback: เริ่มทันทีถ้าอยู่หน้าแรกอยู่แล้ว
+    setTimeout(function(){
+      if(!start){
+        start = Date.now();
+        tick();
+      }
+    }, 500);
+  });
+})();
+</script>
