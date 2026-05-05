@@ -917,7 +917,7 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
 
 
 <!-- ═══ SLIDE 6c: Output · Outcome · ผลกระทบ ═══ -->
-## 📋 ข้อเสนอโครงการ — Output · Outcome · ผลกระทบ {background-color="#0A1628"}
+## 📋 ข้อเสนอโครงการ — Output · Outcome · ผู้ได้รับประโยชน์ {background-color="#0A1628"}
 
 ```{=html}
 <div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.58em;width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:0.28em;">
@@ -934,8 +934,8 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
     </div>
   </div>
 
-  <!-- Body: 3 columns -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.42em;">
+  <!-- Body: 2 columns -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.42em;">
 
     <!-- Output -->
     <div>
@@ -946,28 +946,28 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:0.1em;">
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">📊</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#B39DFF;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Current State Assessment</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">วัด Gap สถานะปัจจุบัน vs นโยบาย</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">🏷️</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#B39DFF;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">AI Auto-Classification & Labelling</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">Public / Internal / Conf. + ประเภท + Retention</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">⏳</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#B39DFF;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Automated Lifecycle Workflow</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">แจ้งเตือน Data Owner · Archive อัตโนมัติ</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(124,77,255,0.06);border-left:2px solid rgba(124,77,255,0.38);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">🗂️</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#B39DFF;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Data Catalog + Gov. Dashboard</div>
@@ -986,28 +986,28 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:0.1em;">
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">🏛️</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#00E676;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Improved Data Governance</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">กำกับชัดเจน ลด Silo บทบาท Owner/Steward ชัด</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">✨</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#00E676;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Better Data Quality & Usability</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">ลดซ้ำซ้อน มีหมวดหมู่ ค้นหาง่าย ใช้ได้เลย</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">🤖</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#00E676;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Future AI Readiness</div>
             <div style="font-size:0.67em;color:#456070;line-height:1.25;">ฐานข้อมูลพร้อมต่อยอด Analytics และ AI ได้ทันที</div>
           </div>
         </div>
-        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.42em;">
+        <div style="display:flex;align-items:center;gap:0.34em;background:rgba(0,230,118,0.05);border-left:2px solid rgba(0,230,118,0.32);border-radius:0 5px 5px 0;padding:0.18em 0.42em;">
           <span style="font-size:1em;flex-shrink:0;">📈</span>
           <div style="min-width:0;">
             <div style="font-weight:700;font-size:0.78em;color:#00E676;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Operational Efficiency</div>
@@ -1017,82 +1017,55 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
       </div>
     </div>
 
-    <!-- ผลกระทบ + ผู้ได้รับประโยชน์ -->
-    <div style="display:flex;flex-direction:column;gap:0.1em;">
+  </div>
 
-      <div style="display:flex;align-items:center;gap:0.34em;padding-bottom:0.12em;border-bottom:1px solid rgba(255,167,38,0.18);">
-        <div style="width:24px;height:24px;min-width:24px;background:linear-gradient(135deg,#FFA726,#F57C00);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.86em;">⚡</div>
-        <div style="color:#FFA726;font-weight:800;font-size:0.9em;">ผลกระทบ <span style="color:rgba(255,167,38,0.5);font-size:0.8em;font-weight:400;">· Impact</span></div>
+  <!-- Stakeholders: horizontal bottom row -->
+  <div style="background:rgba(8,18,40,0.6);border:1px solid rgba(239,83,80,0.2);border-radius:10px;padding:0.4em 0.6em;">
+    <div style="display:flex;align-items:center;gap:0.3em;margin-bottom:0.28em;">
+      <div style="width:20px;height:20px;min-width:20px;background:linear-gradient(135deg,#EF5350,#C62828);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:0.75em;">👥</div>
+      <div style="color:#EF8080;font-weight:800;font-size:0.72em;">ผู้ได้รับประโยชน์ <span style="color:rgba(239,83,80,0.5);font-weight:400;">· Stakeholders</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.3em;">
+
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">👨‍💼</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">ทีม Data<br>Governance</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">Enforce นโยบาย<br>ลดภาระ Manual</div>
       </div>
 
-      <div style="display:flex;align-items:center;gap:0.34em;background:rgba(255,167,38,0.06);border-left:2px solid rgba(255,167,38,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.4em;">
-        <span style="font-size:0.95em;flex-shrink:0;">🏢</span>
-        <div style="min-width:0;">
-          <div style="font-weight:700;font-size:0.76em;color:#FFA726;">Internal Management</div>
-          <div style="font-size:0.65em;color:#456070;line-height:1.25;">นโยบายถูก Enforce จริงในวงกว้าง</div>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:0.34em;background:rgba(255,167,38,0.06);border-left:2px solid rgba(255,167,38,0.32);border-radius:0 5px 5px 0;padding:0.15em 0.4em;">
-        <span style="font-size:0.95em;flex-shrink:0;">🔒</span>
-        <div style="min-width:0;">
-          <div style="font-weight:700;font-size:0.76em;color:#FFA726;">Security & Compliance</div>
-          <div style="font-size:0.65em;color:#456070;line-height:1.25;">ลด PII Exposure · ลดความเสี่ยง PDPA</div>
-        </div>
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">🗝️</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">Data Owner<br>/ Steward</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">รู้สถานะข้อมูล<br>มี Alert แจ้งเตือน</div>
       </div>
 
-      <div style="display:flex;align-items:center;gap:0.2em;margin:0.05em 0;">
-        <div style="flex:1;height:1px;background:rgba(239,83,80,0.2);"></div>
-        <span style="color:#EF5350;font-size:0.6em;font-weight:700;white-space:nowrap;">👥 ผู้ได้รับประโยชน์</span>
-        <div style="flex:1;height:1px;background:rgba(239,83,80,0.2);"></div>
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">🔐</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">ทีม IT<br>/ Security</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">ลดความเสี่ยง<br>Credential · PII</div>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0.1em;">
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">👨‍💼</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ทีม Data Governance</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">มีเครื่องมือ Enforce นโยบาย ลดภาระ Manual</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">🗝️</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Data Owner / Steward</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">รู้สถานะข้อมูล มี Alert แจ้งเตือนอัตโนมัติ</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">🔐</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ทีม IT / Security</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">ลดความเสี่ยง Credential ปะปน PII Exposure</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">📊</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ผู้บริหาร ETDA</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">เข้าถึง Data Catalog · ตัดสินใจด้วยข้อมูลได้เร็ว</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">🏢</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">พนักงานทั่วไป</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">จัดเก็บและใช้งานข้อมูลมีประสิทธิภาพขึ้น</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.32em;background:rgba(239,83,80,0.06);border-left:2px solid rgba(239,83,80,0.28);border-radius:0 5px 5px 0;padding:0.13em 0.4em;">
-          <span style="font-size:0.92em;flex-shrink:0;">🤖</span>
-          <div style="min-width:0;overflow:hidden;">
-            <div style="font-weight:700;font-size:0.74em;color:#EF9090;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ทีม Data Science / AI</div>
-            <div style="font-size:0.63em;color:#456070;line-height:1.2;">ฐานข้อมูลสะอาด มี Label พร้อมต่อยอด Technology ใหม่</div>
-          </div>
-        </div>
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">📊</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">ผู้บริหาร<br>ETDA</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">Data Catalog<br>ตัดสินใจได้เร็ว</div>
+      </div>
+
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">🏢</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">พนักงาน<br>ทั่วไป</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">จัดเก็บและใช้ข้อมูล<br>มีประสิทธิภาพขึ้น</div>
+      </div>
+
+      <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-radius:8px;padding:0.3em 0.35em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.12em;">
+        <div style="width:30px;height:30px;background:rgba(239,83,80,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1em;">🤖</div>
+        <div style="font-weight:700;font-size:0.62em;color:#EF9090;line-height:1.2;">ทีม Data<br>Science / AI</div>
+        <div style="font-size:0.55em;color:#406070;line-height:1.2;">ข้อมูลสะอาด<br>พร้อมต่อยอด</div>
       </div>
 
     </div>
   </div>
+
 </div>
 ```
 
