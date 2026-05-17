@@ -652,160 +652,94 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
 ```
 
 
-<!-- ═══ SLIDE 6a: ที่มา ═══ -->
-## 📋 ข้อเสนอโครงการ — ที่มา {background-color="#0A1628"}
+<!-- ═══ SLIDE 8: POC RESULTS ═══ -->
+## 📊 PoC — สถานะข้อมูลปัจจุบัน {background-color="#0A1628"}
 
 ```{=html}
-<style>
-@keyframes dp2{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.6);opacity:0.3;}}
-@keyframes ab2{0%,100%{transform:translateY(0);}50%{transform:translateY(3px);}}
-@keyframes sb2{0%{left:-100%;}100%{left:200%;}}
-</style>
+<div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.56em;width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:0.25em;">
 
-<div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.62em;height:100%;display:flex;flex-direction:column;gap:0.3em;overflow:hidden;">
+  <!-- Subtitle -->
+  <div style="color:#506070;text-align:center;font-size:0.9em;">
+    Metadata Analysis · 950,000+ records · 4.74 TB · Privacy-by-Design · Microsoft Graph API
+  </div>
 
-  <!-- Header -->
-  <div style="background:linear-gradient(135deg,rgba(0,188,212,0.1),rgba(124,77,255,0.07));border:1px solid rgba(0,188,212,0.2);border-radius:9px;padding:0.35em 0.8em;display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;">
-    <div>
-      <div style="color:#00BCD4;font-weight:800;font-size:1em;">โครงการพัฒนาระบบธรรมาภิบาลข้อมูลองค์กรด้วยปัญญาประดิษฐ์</div>
-      <div style="color:#506070;font-size:0.82em;margin-top:0.05em;">ETDA Data Governance Policy Automation · ทุน ก.พ. 2569 · กลุ่มสาขา 1</div>
+  <!-- KPI row -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.35em;">
+    <div style="background:rgba(0,188,212,0.1);border:1px solid rgba(0,188,212,0.4);border-radius:8px;padding:0.35em 0.5em;text-align:center;">
+      <div style="font-size:1.7em;font-weight:800;color:#00BCD4;">950K+</div>
+      <div style="color:#B0BEC5;">ไฟล์ทั้งหมด</div>
     </div>
-    <div style="text-align:right;flex-shrink:0;">
-      <div style="color:#FFB300;font-weight:700;">นางสาวธัญรดา โพธิ์พระรส</div>
-      <div style="color:#505870;font-size:0.82em;">Data Scientist · ETDA</div>
+    <div style="background:rgba(239,83,80,0.1);border:1px solid rgba(239,83,80,0.4);border-radius:8px;padding:0.35em 0.5em;text-align:center;">
+      <div style="font-size:1.7em;font-weight:800;color:#EF5350;">77%</div>
+      <div style="color:#B0BEC5;">ไม่ได้ใช้ > 2 ปี</div>
+    </div>
+    <div style="background:rgba(255,167,38,0.1);border:1px solid rgba(255,167,38,0.4);border-radius:8px;padding:0.35em 0.5em;text-align:center;">
+      <div style="font-size:1.7em;font-weight:800;color:#FFA726;">436K</div>
+      <div style="color:#B0BEC5;">ไฟล์ซ้ำซ้อน</div>
+    </div>
+    <div style="background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.4);border-radius:8px;padding:0.35em 0.5em;text-align:center;">
+      <div style="font-size:1.7em;font-weight:800;color:#00E676;">4.74 TB</div>
+      <div style="color:#B0BEC5;">พื้นที่จัดเก็บ</div>
     </div>
   </div>
 
-  <!-- Content -->
-  <div style="flex:1;display:flex;gap:0.45em;overflow:hidden;min-height:0;">
+  <!-- Main content -->
+  <div style="display:grid;grid-template-columns:1.8fr 1fr;gap:0.5em;">
 
-    <!-- Left -->
-    <div style="width:42%;display:flex;flex-direction:column;gap:0.25em;overflow:hidden;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.25em;flex:0 0 auto;">
-        <div style="border:1.5px solid rgba(30,136,229,0.3);border-radius:7px;overflow:hidden;background:#060e1e;">
-          <div style="height:160px;overflow:hidden;"><img src="img/etda_gov.png" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" onerror="this.style.display='none'"></div>
-          <div style="padding:0.18em 0.35em;border-top:1px solid rgba(30,136,229,0.2);">
-            <div style="color:#1E88E5;font-weight:700;font-size:0.68em;">Data Governance Policy</div>
-            <div style="font-size:0.58em;color:#FFA726;background:rgba(255,167,38,0.1);border-radius:3px;padding:0.05em 0.25em;display:inline-block;margin-top:0.06em;">⚠️ ยังไม่มีกลไก Auto Enforce</div>
-          </div>
-        </div>
-        <div style="border:1.5px solid rgba(124,77,255,0.3);border-radius:7px;overflow:hidden;background:#060e1e;">
-          <div style="height:160px;overflow:hidden;"><img src="img/doc_center.png" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" onerror="this.style.display='none'"></div>
-          <div style="padding:0.18em 0.35em;border-top:1px solid rgba(124,77,255,0.2);">
-            <div style="color:#7C4DFF;font-weight:700;font-size:0.68em;">Document Center (เดิม)</div>
-            <div style="font-size:0.58em;color:#EF5350;background:rgba(239,83,80,0.1);border-radius:3px;padding:0.05em 0.25em;display:inline-block;margin-top:0.06em;">❌ ไม่อัพเดท</div>
-          </div>
-        </div>
+    <!-- Left: Tree -->
+    <div style="border:1.5px solid rgba(0,188,212,0.35);border-radius:10px;overflow:hidden;height:390px;background:#FFFFFF;position:relative;">
+      <div style="position:absolute;top:0;width:100%;z-index:99;background:rgba(10,22,40,0.97);padding:0.28em 0.65em;border-bottom:1px solid rgba(0,188,212,0.2);font-size:0.9em;display:flex;gap:0.5em;align-items:center;box-sizing:border-box;">
+        <span style="color:#00BCD4;">🌳</span>
+        <span style="color:#FFFFFF;font-weight:600;">Data Lineage · onedrive10@etda.or.th</span>
+        <span style="margin-left:auto;color:#78909C;">DAC-Drive</span>
       </div>
-
-      <div style="flex:1;background:rgba(6,14,30,0.7);border:1px solid rgba(0,188,212,0.12);border-radius:8px;padding:0.3em 0.4em;display:flex;flex-direction:column;gap:0.14em;overflow:hidden;">
-        <div style="display:flex;justify-content:center;flex:0 0 auto;">
-          <div style="background:rgba(255,179,0,0.09);border:1.5px solid rgba(255,179,0,0.4);border-radius:6px;padding:0.13em 0.6em;text-align:center;position:relative;">
-            <div style="font-size:0.65em;font-weight:800;color:#FFB300;">📋 Data Governance Policy</div>
-            <div style="font-size:0.54em;color:#607080;">กฎ · แนวปฏิบัติ · นโยบาย</div>
-            <div style="position:absolute;top:-3px;right:-3px;width:6px;height:6px;background:#00E676;border-radius:50%;animation:dp2 1.5s infinite;"></div>
-          </div>
-        </div>
-        <div style="text-align:center;font-size:0.6em;color:rgba(0,188,212,0.65);animation:ab2 1.8s ease-in-out infinite;flex:0 0 auto;">↓ แปลงเป็น AI Agents</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.1em;flex:1;overflow:hidden;">
-          <div style="background:rgba(239,83,80,0.07);border:1px solid rgba(239,83,80,0.25);border-radius:5px;padding:0.12em 0.25em;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#EF5350,transparent);animation:sb2 2s linear infinite;"></div>
-            <div style="display:flex;align-items:center;gap:0.12em;"><span style="font-size:0.75em;">⏳</span><span style="color:#EF5350;font-weight:700;font-size:0.58em;">Retention Agent</span></div>
-            <div style="color:#607080;font-size:0.52em;">Archive / ทำลายอัตโนมัติ</div>
-            <div id="r3-s" style="font-size:0.52em;color:#EF5350;font-weight:700;"></div>
-          </div>
-          <div style="background:rgba(0,188,212,0.07);border:1px solid rgba(0,188,212,0.25);border-radius:5px;padding:0.12em 0.25em;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#00BCD4,transparent);animation:sb2 2.3s linear 0.3s infinite;"></div>
-            <div style="display:flex;align-items:center;gap:0.12em;"><span style="font-size:0.75em;">🔒</span><span style="color:#00BCD4;font-weight:700;font-size:0.58em;">Classification Agent</span></div>
-            <div style="color:#607080;font-size:0.52em;">Public / Internal / Conf.</div>
-            <div id="c3-s" style="font-size:0.52em;color:#00BCD4;font-weight:700;"></div>
-          </div>
-          <div style="background:rgba(0,230,118,0.06);border:1px solid rgba(0,230,118,0.22);border-radius:5px;padding:0.12em 0.25em;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#00E676,transparent);animation:sb2 2.8s linear 0.8s infinite;"></div>
-            <div style="display:flex;align-items:center;gap:0.12em;"><span style="font-size:0.75em;">🤝</span><span style="color:#00E676;font-weight:700;font-size:0.58em;">Meeting Label Agent</span></div>
-            <div style="color:#607080;font-size:0.52em;">เอกสารประชุม / Board</div>
-            <div id="m3-s" style="font-size:0.52em;color:#00E676;font-weight:700;"></div>
-          </div>
-          <div style="background:rgba(255,179,0,0.06);border:1px solid rgba(255,179,0,0.22);border-radius:5px;padding:0.12em 0.25em;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#FFB300,transparent);animation:sb2 2.1s linear 1.2s infinite;"></div>
-            <div style="display:flex;align-items:center;gap:0.12em;"><span style="font-size:0.75em;">💰</span><span style="color:#FFB300;font-weight:700;font-size:0.58em;">Finance Label Agent</span></div>
-            <div style="color:#607080;font-size:0.52em;">งบประมาณ / ใบสำคัญ</div>
-            <div id="f3-s" style="font-size:0.52em;color:#FFB300;font-weight:700;"></div>
-          </div>
-          <div style="grid-column:1/-1;background:rgba(124,77,255,0.06);border:1px solid rgba(124,77,255,0.22);border-radius:5px;padding:0.1em 0.25em;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#7C4DFF,transparent);animation:sb2 1.9s linear 1.6s infinite;"></div>
-            <div style="display:flex;align-items:center;gap:0.12em;">
-              <span style="font-size:0.75em;">👥</span><span style="color:#7C4DFF;font-weight:700;font-size:0.58em;">HR Label Agent</span>
-              <div id="h3-s" style="margin-left:auto;font-size:0.52em;color:#7C4DFF;font-weight:700;"></div>
-            </div>
-            <div style="color:#607080;font-size:0.52em;">เอกสาร HR · สัญญาจ้าง + PII</div>
-          </div>
-        </div>
-      </div>
+      <iframe src="onedrive10_at_etda_or_th_tree.html" style="width:100%;height:100%;border:none;padding-top:33px;box-sizing:border-box;background:#FFFFFF;"></iframe>
     </div>
 
-    <!-- Right Canvas -->
-    <div style="flex:1;display:flex;flex-direction:column;gap:0.2em;overflow:hidden;min-width:0;">
-      <div style="font-size:0.65em;font-weight:700;color:rgba(0,188,212,0.8);flex:0 0 auto;">👨‍💼 พนักงาน ETDA Upload ไฟล์ → AI Agents จัดการอัตโนมัติ</div>
-      <div style="flex:1;background:rgba(4,10,24,0.95);border:1px solid rgba(0,188,212,0.12);border-radius:9px;overflow:hidden;position:relative;">
-        <canvas id="cv-main" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+    <!-- Right: Findings -->
+    <div style="display:flex;flex-direction:column;gap:0.22em;">
+
+      <div style="font-weight:700;color:#FFB300;font-size:0.95em;">🔍 สิ่งที่พบจาก PoC</div>
+
+      <div style="background:rgba(239,83,80,0.08);border-left:3px solid #EF5350;border-radius:0 6px 6px 0;padding:0.3em 0.55em;line-height:1.45;color:#C0CDD8;">
+        <strong style="color:#EF5350;">⚠️ ขาด Classification</strong><br>
+        <span style="font-size:0.9em;">ข้อมูลหลายประเภทถูกจัดเก็บปะปนกัน ไม่มีการกำหนดชั้นความลับ</span>
       </div>
+
+      <div style="background:rgba(255,167,38,0.08);border-left:3px solid #FFA726;border-radius:0 6px 6px 0;padding:0.3em 0.55em;line-height:1.45;color:#C0CDD8;">
+        <strong style="color:#FFA726;">⚠️ ขาด Lifecycle Management</strong><br>
+        <span style="font-size:0.9em;">ไฟล์เก่าสะสมโดยไม่มีกระบวนการทบทวนหรือ Archive</span>
+      </div>
+
+      <div style="background:rgba(124,77,255,0.08);border-left:3px solid #7C4DFF;border-radius:0 6px 6px 0;padding:0.3em 0.55em;line-height:1.45;color:#C0CDD8;">
+        <strong style="color:#7C4DFF;">⚠️ Sensitive Data ปะปน</strong><br>
+        <span style="font-size:0.9em;">พบไฟล์ .ppk, Credential ปะปนกับเอกสารทั่วไป ขาด Access Control</span>
+      </div>
+
+      <div style="background:rgba(30,136,229,0.08);border-left:3px solid #1E88E5;border-radius:0 6px 6px 0;padding:0.3em 0.55em;line-height:1.45;color:#C0CDD8;">
+        <strong style="color:#64B5F6;">⚠️ ขาด Single Source of Truth</strong><br>
+        <span style="font-size:0.9em;">ข้อมูลชุดเดียวกันกระจายหลาย Drive ไม่รู้ว่าอันไหนคือเวอร์ชันล่าสุด</span>
+      </div>
+
+      <!-- โอกาส -->
+      <div style="background:linear-gradient(135deg,rgba(0,230,118,0.1),rgba(0,188,212,0.07));border:1.5px solid rgba(0,230,118,0.35);border-radius:7px;padding:0.35em 0.6em;line-height:1.5;">
+        <div style="color:#00E676;font-weight:800;font-size:0.95em;margin-bottom:0.12em;">💡 โอกาส — Solution</div>
+        <div style="color:#C0CDD8;font-size:0.88em;line-height:1.5;">
+          นำ <strong style="color:#00BCD4;">AI + Automation</strong> มาสร้างระบบที่<br>
+          จำแนก · จัดเก็บ · ติดตาม · และบังคับใช้<br>
+          นโยบายข้อมูลองค์กรได้<strong style="color:#00E676;">โดยอัตโนมัติ</strong>
+        </div>
+      </div>
+
+      <!-- Privacy -->
+      <div style="background:rgba(0,188,212,0.06);border:1px solid rgba(0,188,212,0.22);border-radius:6px;padding:0.28em 0.55em;color:#B0BEC5;font-size:0.88em;">
+        🔒 <strong style="color:#00BCD4;">Privacy-by-Design</strong> · ดึงเฉพาะ Metadata · ไม่เข้าถึง Content
+      </div>
+
     </div>
   </div>
 </div>
-
-<script>
-(function(){
-  const m={'r3-s':['🗑️ ทำลาย 3 ไฟล์','📦 Archive 12','⏳ ตรวจ 1,240'],'c3-s':['🔴 Conf:156','🟡 Internal:892','🔵 Public:234'],'m3-s':['🤝 Meeting:45','📝 วาระ:12'],'f3-s':['💰 Finance:89','📊 Budget:34'],'h3-s':['👥 HR:67','⚠️ PII:12']};
-  let ix={};Object.keys(m).forEach(k=>ix[k]=0);
-  setInterval(()=>{Object.keys(m).forEach(k=>{const el=document.getElementById(k);if(el){el.textContent=m[k][ix[k]%m[k].length];ix[k]++;}});},2200);
-})();
-(function(){
-  const cv=document.getElementById('cv-main');if(!cv)return;
-  const ctx=cv.getContext('2d');let W,H,t=0;
-  function rsz(){W=cv.offsetWidth||600;H=cv.offsetHeight||320;cv.width=W;cv.height=H;}rsz();
-  const pC=['#00BCD4','#7C4DFF','#00E676','#FFB300','#1E88E5','#EF5350','#FFA726','#26C6DA','#E91E63','#AB47BC','#4CAF50','#FF7043'];
-  const depts=['DSD','DAC','DID','1212','IT','Legal','HR','Policy','Finance','Research','Sec','Admin'];
-  const ft=[{em:'📋',col:'#00E676',tag:'Meeting'},{em:'💰',col:'#FFB300',tag:'Finance'},{em:'👥',col:'#7C4DFF',tag:'HR Doc'},{em:'🔒',col:'#EF5350',tag:'Conf.'},{em:'📄',col:'#00BCD4',tag:'Policy'}];
-  const ag=[{label:'Retention',em:'⏳',col:'#EF5350',rx:0.80,ry:0.12},{label:'Classification',em:'🔒',col:'#00BCD4',rx:0.96,ry:0.35},{label:'Meeting Label',em:'🤝',col:'#00E676',rx:0.76,ry:0.57},{label:'Finance Label',em:'💰',col:'#FFB300',rx:0.94,ry:0.75},{label:'HR Label',em:'👥',col:'#7C4DFF',rx:0.79,ry:0.92}];
-  const persons=depts.map((d,i)=>({dept:d,col:pC[i],rx:0.03+(i%4)*0.085,ry:0.16+Math.floor(i/4)*0.30,phase:i*0.65,timer:Math.floor(Math.random()*55)+15}));
-  let pk=[],tg=[];
-  const ap=def=>({x:def.rx*W,y:def.ry*H});const od=()=>({x:W*0.52,y:H*0.50});
-  const lerp=(a,b,u)=>a+(b-a)*Math.min(Math.max(u,0),1);const ease=x=>x<0.5?2*x*x:-1+(4-2*x)*x;
-  function spawnPkt(pi){const p=persons[pi],o=od();pk.push({srcPI:pi,stage:'to-cloud',prog:0,x:p.rx*W,y:p.ry*H,sx:p.rx*W,sy:p.ry*H,ftIdx:Math.floor(Math.random()*ft.length),agIdx:Math.floor(Math.random()*ag.length),alpha:1,speed:0.013+Math.random()*0.008});}
-  function drawPerson(x,y,col,dept){ctx.save();ctx.strokeStyle=col;ctx.lineWidth=1.4;ctx.beginPath();ctx.arc(x,y,6.5,0,Math.PI*2);ctx.fillStyle=col+'25';ctx.fill();ctx.stroke();ctx.beginPath();ctx.moveTo(x,y+6.5);ctx.lineTo(x,y+18);ctx.stroke();ctx.beginPath();ctx.moveTo(x-6,y+11);ctx.lineTo(x+6,y+11);ctx.stroke();ctx.beginPath();ctx.moveTo(x,y+18);ctx.lineTo(x-5,y+27);ctx.moveTo(x,y+18);ctx.lineTo(x+5,y+27);ctx.stroke();ctx.fillStyle=col;ctx.font=`bold ${Math.max(6,W*0.015)}px Inter,sans-serif`;ctx.textAlign='center';ctx.fillText(dept,x,y+37);ctx.restore();}
-  function drawCloud(x,y){ctx.save();const r=18+Math.sin(t*0.08)*2;const g=ctx.createRadialGradient(x,y,0,x,y,r*2.2);g.addColorStop(0,'rgba(0,188,212,0.15)');g.addColorStop(1,'rgba(0,188,212,0)');ctx.beginPath();ctx.arc(x,y,r*2.2,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.shadowColor='#00BCD4';ctx.shadowBlur=10;ctx.beginPath();ctx.arc(x-8,y+4,10,0,Math.PI*2);ctx.arc(x+8,y+4,10,0,Math.PI*2);ctx.arc(x,y-3,12,0,Math.PI*2);ctx.fillStyle='rgba(0,188,212,0.12)';ctx.strokeStyle='#00BCD4';ctx.lineWidth=1.6;ctx.fill();ctx.stroke();ctx.fillStyle='#00BCD4';ctx.font=`bold ${Math.max(7,W*0.018)}px Inter,sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('OneDrive',x,y+21);ctx.restore();}
-  function drawAgent(def,active){const{x,y}=ap(def),r=21;ctx.save();if(active){ctx.shadowColor=def.col;ctx.shadowBlur=16;}ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=def.col+'1a';ctx.strokeStyle=def.col;ctx.lineWidth=active?2.3:1.5;ctx.fill();ctx.stroke();if(active){ctx.beginPath();ctx.arc(x,y,r+4,-Math.PI/2,-Math.PI/2+(t%48)*(Math.PI*2/48));ctx.strokeStyle=def.col+'88';ctx.lineWidth=1.8;ctx.stroke();}ctx.font=`${Math.max(12,W*0.03)}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(def.em,x,y);ctx.fillStyle=def.col;ctx.font=`bold ${Math.max(6,W*0.015)}px Inter,sans-serif`;ctx.textBaseline='alphabetic';ctx.fillText(def.label,x,y+r+12);ctx.restore();}
-  function drawPkt(p){const f=ft[p.ftIdx];ctx.save();ctx.globalAlpha=p.alpha;ctx.shadowColor=f.col;ctx.shadowBlur=6;ctx.fillStyle=f.col+'1a';ctx.strokeStyle=f.col;ctx.lineWidth=1.1;ctx.beginPath();ctx.roundRect(p.x-7,p.y-8,14,18,3);ctx.fill();ctx.stroke();ctx.font=`${Math.max(8,W*0.02)}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(f.em,p.x,p.y);ctx.restore();}
-  function drawTag(tg){const f=ft[tg.ftIdx];ctx.save();ctx.globalAlpha=tg.alpha;ctx.fillStyle=f.col+'1a';ctx.strokeStyle=f.col;ctx.lineWidth=0.9;ctx.beginPath();ctx.roundRect(tg.x-22,tg.y-6,44,13,6);ctx.fill();ctx.stroke();ctx.fillStyle=f.col;ctx.font=`bold ${Math.max(5,W*0.012)}px Inter,sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(f.tag,tg.x,tg.y);ctx.restore();}
-  function frame(){
-    rsz();ctx.clearRect(0,0,W,H);ctx.fillStyle='#040a18';ctx.fillRect(0,0,W,H);
-    ctx.font=`${Math.max(7,W*0.014)}px Inter,sans-serif`;ctx.fillStyle='rgba(255,255,255,0.06)';
-    ctx.textAlign='left';ctx.fillText('👨‍💼 พนักงาน',4,12);ctx.textAlign='center';ctx.fillText('☁️ OneDrive',W*0.52,12);ctx.textAlign='right';ctx.fillText('🤖 AI Agents',W-4,12);
-    ctx.strokeStyle='rgba(0,188,212,0.06)';ctx.lineWidth=1;ctx.setLineDash([3,7]);
-    [W*0.37,W*0.64].forEach(vx=>{ctx.beginPath();ctx.moveTo(vx,17);ctx.lineTo(vx,H-6);ctx.stroke();});ctx.setLineDash([]);
-    const o=od();
-    ag.forEach(def=>{const a=ap(def);ctx.beginPath();ctx.moveTo(o.x+17,o.y);ctx.lineTo(a.x-23,a.y);ctx.strokeStyle=def.col+'12';ctx.lineWidth=0.7;ctx.setLineDash([3,8]);ctx.stroke();ctx.setLineDash([]);});
-    persons.forEach((p,i)=>{const y2=p.ry*H+Math.sin(t*0.04+p.phase)*2.5;p._cx=p.rx*W;p._cy=y2;p.timer--;if(p.timer<=0){spawnPkt(i);p.timer=40+Math.floor(Math.random()*60);}drawPerson(p._cx,y2,p.col,p.dept);});
-    drawCloud(o.x,o.y);
-    ag.forEach((def,i)=>{const active=pk.some(p=>p.stage==='to-agent'&&p.agIdx===i&&p.prog>0.4);drawAgent(def,active);});
-    pk=pk.filter(p=>p.alpha>0.02);
-    pk.forEach(p=>{
-      if(p.stage==='to-cloud'){p.prog+=p.speed;const px=persons[p.srcPI];const sx=px._cx||px.rx*W;const sy=px._cy||px.ry*H;p.x=lerp(sx,o.x,ease(p.prog));p.y=lerp(sy,o.y,ease(p.prog));if(p.prog>=1){p.prog=0;p.stage='to-agent';p.sx=o.x;p.sy=o.y;}}
-      else{p.prog+=p.speed*0.82;const a=ap(ag[p.agIdx]);p.x=lerp(p.sx,a.x,ease(p.prog));p.y=lerp(p.sy,a.y,ease(p.prog));if(p.prog>=1){tg.push({x:a.x,y:a.y-24,ftIdx:p.ftIdx,alpha:1,vy:-0.5});p.alpha=0;}}
-      drawPkt(p);
-    });
-    tg=tg.filter(t=>t.alpha>0.02);
-    tg.forEach(t=>{t.y+=t.vy;t.vy*=0.97;t.alpha-=0.007;drawTag(t);});
-    t++;requestAnimationFrame(frame);
-  }
-  frame();
-})();
-</script>
 ```
-
-
-
 
 <!-- ═══ SLIDE 7: DATA LIFECYCLE ═══ -->
 ## 🔄 ปัญหา: Data Lifecycle ที่ไม่สมบูรณ์ {background-color="#0A1628"}
@@ -1006,465 +940,715 @@ document.addEventListener('DOMContentLoaded',function(){showETDA('p',1);});
 
 
 
-<!-- ═══ SLIDE 8: POC RESULTS ═══ -->
-## 📊 หลักฐานจาก PoC — สถานะข้อมูลปัจจุบัน {background-color="#0A1628"}
+
+<!-- ═══ SLIDE 6a: ที่มา ═══ -->
+## 📋 ข้อเสนอโครงการ {background-color="#0A1628"}
 
 ```{=html}
-<div style="font-size:0.58em;color:#B0BEC5;text-align:center;margin-bottom:0.3em;">
-  Metadata Analysis · 950,000+ records · 4.74 TB · Privacy-by-Design · Microsoft Graph API
-</div>
+<style>
+@keyframes dp2{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.6);opacity:0.3;}}
+@keyframes ab2{0%,100%{transform:translateY(0);}50%{transform:translateY(3px);}}
+@keyframes sb2{0%{left:-100%;}100%{left:200%;}}
+@keyframes agGlow1{0%,100%{box-shadow:0 0 8px rgba(239,83,80,0.4);}50%{box-shadow:0 0 20px rgba(239,83,80,0.9);}}
+@keyframes agGlow2{0%,100%{box-shadow:0 0 8px rgba(0,188,212,0.4);}50%{box-shadow:0 0 20px rgba(0,188,212,0.9);}}
+@keyframes agGlow3{0%,100%{box-shadow:0 0 8px rgba(124,77,255,0.4);}50%{box-shadow:0 0 20px rgba(124,77,255,0.9);}}
+</style>
 
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.4em;font-size:0.58em;margin-bottom:0.4em;">
-  <div style="background:rgba(0,188,212,0.1);border:1px solid rgba(0,188,212,0.4);border-radius:8px;padding:0.4em 0.6em;text-align:center;">
-    <div style="font-size:1.7em;font-weight:800;color:#00BCD4;">950K+</div><div style="color:#B0BEC5;">ไฟล์ทั้งหมด</div>
-  </div>
-  <div style="background:rgba(239,83,80,0.1);border:1px solid rgba(239,83,80,0.4);border-radius:8px;padding:0.4em 0.6em;text-align:center;">
-    <div style="font-size:1.7em;font-weight:800;color:#EF5350;">77%</div><div style="color:#B0BEC5;">ไม่ได้ใช้ > 2 ปี</div>
-  </div>
-  <div style="background:rgba(255,167,38,0.1);border:1px solid rgba(255,167,38,0.4);border-radius:8px;padding:0.4em 0.6em;text-align:center;">
-    <div style="font-size:1.7em;font-weight:800;color:#FFA726;">436K</div><div style="color:#B0BEC5;">ไฟล์ซ้ำซ้อน</div>
-  </div>
-  <div style="background:rgba(0,230,118,0.1);border:1px solid rgba(0,230,118,0.4);border-radius:8px;padding:0.4em 0.6em;text-align:center;">
-    <div style="font-size:1.7em;font-weight:800;color:#00E676;">4.74 TB</div><div style="color:#B0BEC5;">พื้นที่จัดเก็บ</div>
-  </div>
-</div>
+<div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.64em;width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:0.3em;">
 
-<div style="display:grid;grid-template-columns:1.8fr 1fr;gap:0.6em;height:400px;">
-  <div style="border:1.5px solid rgba(0,188,212,0.35);border-radius:10px;overflow:hidden;height:400px;background:#FFFFFF;position:relative;">
-    <div style="position:absolute;top:0;width:100%;z-index:99;background:rgba(10,22,40,0.97);padding:0.3em 0.7em;border-bottom:1px solid rgba(0,188,212,0.2);font-size:0.58em;display:flex;gap:0.5em;align-items:center;box-sizing:border-box;">
-      <span style="color:#00BCD4;">🌳</span><span style="color:#FFFFFF;font-weight:600;">Data Lineage · onedrive10@etda.or.th</span><span style="margin-left:auto;color:#78909C;margin-right:1em;">DAC-Drive</span>
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,rgba(0,188,212,0.1),rgba(124,77,255,0.07));border:1px solid rgba(0,188,212,0.2);border-radius:9px;padding:0.35em 0.8em;display:flex;justify-content:space-between;align-items:center;">
+    <div>
+      <div style="color:#00BCD4;font-weight:800;font-size:1em;">โครงการพัฒนาระบบธรรมาภิบาลข้อมูลองค์กรด้วยปัญญาประดิษฐ์</div>
+      <div style="color:#506070;font-size:0.82em;margin-top:0.05em;">ETDA Data Governance Policy Automation · ทุน ก.พ. 2569 · กลุ่มสาขา 1</div>
     </div>
-    <iframe src="onedrive10_at_etda_or_th_tree.html" style="width:100%;height:100%;border:none;padding-top:35px;box-sizing:border-box;background:#FFFFFF;"></iframe>
+    <div style="text-align:right;flex-shrink:0;">
+      <div style="color:#FFB300;font-weight:700;">นางสาวธัญรดา โพธิ์พระรส</div>
+      <div style="color:#505870;font-size:0.82em;">Data Scientist · ETDA</div>
+    </div>
   </div>
 
-  <div style="display:flex;flex-direction:column;gap:0.4em;font-size:0.6em;">
-    <div style="font-weight:700;color:#FFB300;margin-bottom:0.1em;">🔍 สิ่งที่พบจาก PoC</div>
-    <div style="background:rgba(239,83,80,0.09);border-left:3px solid #EF5350;border-radius:0 6px 6px 0;padding:0.4em 0.6em;line-height:1.55;color:#C0CDD8;">
-      <strong style="color:#EF5350;">⚠️ ขาด Classification</strong><br>ข้อมูลหลายประเภทถูกจัดเก็บปะปนกัน ไม่มีการกำหนดชั้นความลับ
+  <!-- Content -->
+  <div style="display:flex;gap:0.45em;height:490px;">
+
+    <!-- Left -->
+    <div style="width:42%;display:flex;flex-direction:column;gap:0.22em;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.22em;flex:0 0 auto;">
+        <div style="border:1.5px solid rgba(30,136,229,0.3);border-radius:7px;overflow:hidden;background:#060e1e;">
+          <div style="height:105px;overflow:hidden;"><img src="img/etda_gov.png" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" onerror="this.style.display='none'"></div>
+          <div style="padding:0.18em 0.35em;border-top:1px solid rgba(30,136,229,0.2);">
+            <div style="color:#1E88E5;font-weight:700;font-size:0.68em;">Data Governance Policy</div>
+            <div style="font-size:0.58em;color:#FFA726;background:rgba(255,167,38,0.1);border-radius:3px;padding:0.04em 0.22em;display:inline-block;margin-top:0.04em;">⚠️ ยังไม่มีกลไก Auto Enforce</div>
+          </div>
+        </div>
+        <div style="border:1.5px solid rgba(124,77,255,0.3);border-radius:7px;overflow:hidden;background:#060e1e;">
+          <div style="height:105px;overflow:hidden;"><img src="img/doc_center.png" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" onerror="this.style.display='none'"></div>
+          <div style="padding:0.18em 0.35em;border-top:1px solid rgba(124,77,255,0.2);">
+            <div style="color:#7C4DFF;font-weight:700;font-size:0.68em;">Document Center (เดิม)</div>
+            <div style="font-size:0.58em;color:#EF5350;background:rgba(239,83,80,0.1);border-radius:3px;padding:0.04em 0.22em;display:inline-block;margin-top:0.04em;">❌ ไม่อัพเดท</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:1;background:rgba(6,14,30,0.7);border:1px solid rgba(0,188,212,0.12);border-radius:8px;padding:0.28em 0.38em;display:flex;flex-direction:column;gap:0.12em;overflow:hidden;">
+        <div style="display:flex;justify-content:center;flex:0 0 auto;">
+          <div style="background:rgba(255,179,0,0.09);border:1.5px solid rgba(255,179,0,0.4);border-radius:6px;padding:0.12em 0.55em;text-align:center;position:relative;">
+            <div style="font-size:0.65em;font-weight:800;color:#FFB300;">📋 Data Governance Policy</div>
+            <div style="font-size:0.54em;color:#607080;">กฎ · แนวปฏิบัติ · นโยบาย</div>
+            <div style="position:absolute;top:-3px;right:-3px;width:6px;height:6px;background:#00E676;border-radius:50%;animation:dp2 1.5s infinite;"></div>
+          </div>
+        </div>
+        <div style="text-align:center;font-size:0.6em;color:rgba(0,188,212,0.65);animation:ab2 1.8s ease-in-out infinite;flex:0 0 auto;">↓ แปลงเป็น AI Agents</div>
+
+        <!-- Agent 1: Retention -->
+        <div style="flex:1;background:rgba(239,83,80,0.07);border:1px solid rgba(239,83,80,0.25);border-radius:6px;padding:0.16em 0.28em;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#EF5350,transparent);animation:sb2 2s linear infinite;"></div>
+          <div style="display:flex;align-items:center;gap:0.2em;margin-bottom:0.06em;">
+            <div style="width:22px;height:22px;min-width:22px;background:rgba(239,83,80,0.15);border-radius:5px;border:1px solid rgba(239,83,80,0.5);display:flex;align-items:center;justify-content:center;font-size:0.85em;animation:agGlow1 2s infinite;">⏳</div>
+            <span style="color:#EF5350;font-weight:700;font-size:0.62em;">Retention Agent</span>
+            <div id="r3-s" style="margin-left:auto;font-size:0.5em;color:#EF5350;font-weight:700;"></div>
+          </div>
+          <div style="color:#607080;font-size:0.54em;line-height:1.4;padding-left:0.2em;">
+            ตรวจอายุไฟล์ · เทียบ Retention Policy<br>
+            ครบกำหนด → 🔔 แจ้ง Data Owner Approve Archive/ทำลาย
+          </div>
+        </div>
+
+        <!-- Agent 2: Classification -->
+        <div style="flex:1;background:rgba(0,188,212,0.07);border:1px solid rgba(0,188,212,0.25);border-radius:6px;padding:0.16em 0.28em;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#00BCD4,transparent);animation:sb2 2.3s linear 0.3s infinite;"></div>
+          <div style="display:flex;align-items:center;gap:0.2em;margin-bottom:0.06em;">
+            <div style="width:22px;height:22px;min-width:22px;background:rgba(0,188,212,0.15);border-radius:5px;border:1px solid rgba(0,188,212,0.5);display:flex;align-items:center;justify-content:center;font-size:0.85em;animation:agGlow2 2s ease-in-out 0.5s infinite;">🔒</div>
+            <span style="color:#00BCD4;font-weight:700;font-size:0.62em;">Classification Agent</span>
+            <div id="c3-s" style="margin-left:auto;font-size:0.5em;color:#00BCD4;font-weight:700;"></div>
+          </div>
+          <div style="color:#607080;font-size:0.54em;line-height:1.4;padding-left:0.2em;">
+            อ่านเนื้อหา · NLP ประเมินชั้นความลับ<br>
+            ติด Label: 🔴 ลับมาก / 🟡 ภายใน / 🔵 ทั่วไป
+          </div>
+        </div>
+
+        <!-- Agent 3: DocType -->
+        <div style="flex:1;background:rgba(124,77,255,0.06);border:1px solid rgba(124,77,255,0.22);border-radius:6px;padding:0.16em 0.28em;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:-100%;width:50%;height:1px;background:linear-gradient(90deg,transparent,#7C4DFF,transparent);animation:sb2 1.9s linear 1.6s infinite;"></div>
+          <div style="display:flex;align-items:center;gap:0.2em;margin-bottom:0.06em;">
+            <div style="width:22px;height:22px;min-width:22px;background:rgba(124,77,255,0.15);border-radius:5px;border:1px solid rgba(124,77,255,0.5);display:flex;align-items:center;justify-content:center;font-size:0.85em;animation:agGlow3 2s ease-in-out 1s infinite;">🏷️</div>
+            <span style="color:#7C4DFF;font-weight:700;font-size:0.62em;">DocType Agent</span>
+            <div id="h3-s" style="margin-left:auto;font-size:0.5em;color:#7C4DFF;font-weight:700;"></div>
+          </div>
+          <div style="color:#607080;font-size:0.54em;line-height:1.4;padding-left:0.2em;">
+            วิเคราะห์โครงสร้างเอกสาร · ติดแท็กประเภท<br>
+            บอร์ด · TOR · HR · ใบเสร็จ · นโยบาย → เชื่อม Data Catalog
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div style="background:rgba(255,167,38,0.09);border-left:3px solid #FFA726;border-radius:0 6px 6px 0;padding:0.4em 0.6em;line-height:1.55;color:#C0CDD8;">
-      <strong style="color:#FFA726;">⚠️ ขาด Lifecycle Management</strong><br>ไฟล์เก่าสะสมโดยไม่มีกระบวนการทบทวนหรือ Archive
+
+    <!-- Right Canvas -->
+    <div style="flex:1;display:flex;flex-direction:column;gap:0.2em;min-width:0;overflow:hidden;">
+      <div style="font-size:0.65em;font-weight:700;color:rgba(0,188,212,0.8);flex:0 0 auto;">👨‍💼 พนักงาน ETDA Upload ไฟล์ → AI Agents จัดการอัตโนมัติ</div>
+      <div style="flex:1;background:rgba(4,10,24,0.95);border:1px solid rgba(0,188,212,0.12);border-radius:9px;overflow:hidden;position:relative;">
+        <canvas id="cv-main" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+      </div>
     </div>
-    <div style="background:rgba(124,77,255,0.09);border-left:3px solid #7C4DFF;border-radius:0 6px 6px 0;padding:0.4em 0.6em;line-height:1.55;color:#C0CDD8;">
-      <strong style="color:#7C4DFF;">⚠️ Sensitive Data ปะปน</strong><br>พบไฟล์ .ppk, Credential ปะปนกับเอกสารทั่วไป ขาด Access Control
-    </div>
-    <div style="background:rgba(0,230,118,0.09);border-left:3px solid #00E676;border-radius:0 6px 6px 0;padding:0.4em 0.6em;line-height:1.55;color:#C0CDD8;">
-      <strong style="color:#00E676;">✅ โอกาส</strong><br>Policy Automation จะแก้ทุกประเด็นนี้ได้โดยอัตโนมัติ
-    </div>
-    <div style="margin-top:auto;background:rgba(0,188,212,0.07);border:1px solid rgba(0,188,212,0.25);border-radius:6px;padding:0.4em 0.6em;font-size:0.85em;color:#B0BEC5;">
-      🔒 <strong style="color:#00BCD4;">Privacy-by-Design</strong><br>ดึงเฉพาะ Metadata · ไม่เข้าถึง Content
-    </div>
+
   </div>
 </div>
+
+<script>
+(function(){
+  const m={
+    'r3-s':['🗑️ ทำลาย 3 ไฟล์','📦 Archive 12','⏳ ตรวจ 1,240'],
+    'c3-s':['🔴 Conf:156','🟡 Internal:892','🔵 Public:234'],
+    'h3-s':['🏷️ บอร์ด:45','💰 Finance:89','👥 HR:67']
+  };
+  let ix={};Object.keys(m).forEach(k=>ix[k]=0);
+  setInterval(()=>{Object.keys(m).forEach(k=>{const el=document.getElementById(k);if(el){el.textContent=m[k][ix[k]%m[k].length];ix[k]++;}});},2200);
+})();
+
+(function(){
+  const cv=document.getElementById('cv-main');if(!cv)return;
+  const ctx=cv.getContext('2d');let W,H,t=0;
+  function rsz(){W=cv.offsetWidth||600;H=cv.offsetHeight||320;cv.width=W;cv.height=H;}rsz();
+  const pC=['#00BCD4','#7C4DFF','#00E676','#FFB300','#1E88E5','#EF5350','#FFA726','#26C6DA','#E91E63','#AB47BC','#4CAF50','#FF7043'];
+  const depts=['DSD','DAC','DID','1212','IT','Legal','HR','Policy','Finance','Research','Sec','Admin'];
+  const ft=[{em:'📋',col:'#00E676',tag:'Meeting'},{em:'💰',col:'#FFB300',tag:'Finance'},{em:'👥',col:'#7C4DFF',tag:'HR Doc'},{em:'🔒',col:'#EF5350',tag:'Conf.'},{em:'📄',col:'#00BCD4',tag:'Policy'}];
+  const ag=[
+    {label:'Retention',em:'⏳',col:'#EF5350',rx:0.82,ry:0.18},
+    {label:'Classification',em:'🔒',col:'#00BCD4',rx:0.96,ry:0.50},
+    {label:'DocType',em:'🏷️',col:'#7C4DFF',rx:0.82,ry:0.82}
+  ];
+  const persons=depts.map((d,i)=>({dept:d,col:pC[i],rx:0.03+(i%4)*0.085,ry:0.16+Math.floor(i/4)*0.30,phase:i*0.65,timer:Math.floor(Math.random()*55)+15}));
+  let pk=[],tg=[];
+  const ap=def=>({x:def.rx*W,y:def.ry*H});
+  const od=()=>({x:W*0.50,y:H*0.50});
+  const lerp=(a,b,u)=>a+(b-a)*Math.min(Math.max(u,0),1);
+  const ease=x=>x<0.5?2*x*x:-1+(4-2*x)*x;
+
+  function spawnPkt(pi){
+    const p=persons[pi],o=od();
+    pk.push({srcPI:pi,stage:'to-cloud',prog:0,x:p.rx*W,y:p.ry*H,sx:p.rx*W,sy:p.ry*H,
+      ftIdx:Math.floor(Math.random()*ft.length),agIdx:Math.floor(Math.random()*ag.length),
+      alpha:1,speed:0.013+Math.random()*0.008});
+  }
+
+  function drawPerson(x,y,col,dept){
+    ctx.save();ctx.strokeStyle=col;ctx.lineWidth=1.4;
+    ctx.beginPath();ctx.arc(x,y,6.5,0,Math.PI*2);ctx.fillStyle=col+'25';ctx.fill();ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x,y+6.5);ctx.lineTo(x,y+18);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x-6,y+11);ctx.lineTo(x+6,y+11);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x,y+18);ctx.lineTo(x-5,y+27);ctx.moveTo(x,y+18);ctx.lineTo(x+5,y+27);ctx.stroke();
+    ctx.fillStyle=col;ctx.font=`bold ${Math.max(6,W*0.015)}px Inter,sans-serif`;
+    ctx.textAlign='center';ctx.fillText(dept,x,y+37);ctx.restore();
+  }
+
+  function drawCloud(x,y){
+    ctx.save();const r=18+Math.sin(t*0.08)*2;
+    const g=ctx.createRadialGradient(x,y,0,x,y,r*2.2);
+    g.addColorStop(0,'rgba(0,188,212,0.15)');g.addColorStop(1,'rgba(0,188,212,0)');
+    ctx.beginPath();ctx.arc(x,y,r*2.2,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
+    ctx.shadowColor='#00BCD4';ctx.shadowBlur=10;
+    ctx.beginPath();ctx.arc(x-8,y+4,10,0,Math.PI*2);ctx.arc(x+8,y+4,10,0,Math.PI*2);ctx.arc(x,y-3,12,0,Math.PI*2);
+    ctx.fillStyle='rgba(0,188,212,0.12)';ctx.strokeStyle='#00BCD4';ctx.lineWidth=1.6;ctx.fill();ctx.stroke();
+    ctx.fillStyle='#00BCD4';ctx.font=`bold ${Math.max(7,W*0.018)}px Inter,sans-serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('OneDrive',x,y+21);ctx.restore();
+  }
+
+  function drawAgent(def,active){
+    const{x,y}=ap(def);
+    const boxW=62,boxH=48,bx=x-boxW/2,by=y-boxH/2;
+    ctx.save();
+    if(active){ctx.shadowColor=def.col;ctx.shadowBlur=18;}
+    const grad=ctx.createLinearGradient(bx,by,bx,by+boxH);
+    grad.addColorStop(0,def.col+'22');grad.addColorStop(1,def.col+'08');
+    ctx.fillStyle=grad;ctx.strokeStyle=active?def.col:def.col+'88';
+    ctx.lineWidth=active?2:1.2;
+    ctx.beginPath();ctx.roundRect(bx,by,boxW,boxH,8);ctx.fill();ctx.stroke();
+    if(active){
+      ctx.beginPath();
+      ctx.arc(x,y-7,14,-Math.PI/2,-Math.PI/2+(t%48)*(Math.PI*2/48));
+      ctx.strokeStyle=def.col+'66';ctx.lineWidth=2;ctx.stroke();
+    }
+    ctx.font=`${Math.max(14,W*0.03)}px serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(def.em,x,y-7);
+    ctx.fillStyle=def.col;
+    ctx.font=`bold ${Math.max(7,W*0.014)}px Inter,sans-serif`;
+    ctx.textBaseline='alphabetic';
+    ctx.fillText(def.label,x,y+16);
+    ctx.restore();
+  }
+
+  function drawPkt(p){
+    const f=ft[p.ftIdx];ctx.save();ctx.globalAlpha=p.alpha;
+    ctx.shadowColor=f.col;ctx.shadowBlur=6;
+    ctx.fillStyle=f.col+'1a';ctx.strokeStyle=f.col;ctx.lineWidth=1.1;
+    ctx.beginPath();ctx.roundRect(p.x-7,p.y-8,14,18,3);ctx.fill();ctx.stroke();
+    ctx.font=`${Math.max(8,W*0.02)}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(f.em,p.x,p.y);ctx.restore();
+  }
+
+  function drawTag(tag){
+    const f=ft[tag.ftIdx];ctx.save();ctx.globalAlpha=tag.alpha;
+    ctx.fillStyle=f.col+'1a';ctx.strokeStyle=f.col;ctx.lineWidth=0.9;
+    ctx.beginPath();ctx.roundRect(tag.x-22,tag.y-6,44,13,6);ctx.fill();ctx.stroke();
+    ctx.fillStyle=f.col;ctx.font=`bold ${Math.max(5,W*0.012)}px Inter,sans-serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(f.tag,tag.x,tag.y);ctx.restore();
+  }
+
+  function frame(){
+    rsz();ctx.clearRect(0,0,W,H);ctx.fillStyle='#040a18';ctx.fillRect(0,0,W,H);
+    ctx.font=`${Math.max(7,W*0.014)}px Inter,sans-serif`;ctx.fillStyle='rgba(255,255,255,0.06)';
+    ctx.textAlign='left';ctx.fillText('👨‍💼 พนักงาน',4,12);
+    ctx.textAlign='center';ctx.fillText('☁️ OneDrive',W*0.50,12);
+    ctx.textAlign='right';ctx.fillText('🤖 AI Agents',W-4,12);
+    ctx.strokeStyle='rgba(0,188,212,0.06)';ctx.lineWidth=1;ctx.setLineDash([3,7]);
+    [W*0.35,W*0.62].forEach(vx=>{ctx.beginPath();ctx.moveTo(vx,17);ctx.lineTo(vx,H-6);ctx.stroke();});
+    ctx.setLineDash([]);
+    const o=od();
+    ag.forEach(def=>{
+      const a=ap(def);
+      ctx.beginPath();ctx.moveTo(o.x+20,o.y);ctx.lineTo(a.x-32,a.y);
+      ctx.strokeStyle=def.col+'14';ctx.lineWidth=0.8;ctx.setLineDash([3,8]);ctx.stroke();ctx.setLineDash([]);
+    });
+    persons.forEach((p,i)=>{
+      const y2=p.ry*H+Math.sin(t*0.04+p.phase)*2.5;
+      p._cx=p.rx*W;p._cy=y2;
+      p.timer--;if(p.timer<=0){spawnPkt(i);p.timer=40+Math.floor(Math.random()*60);}
+      drawPerson(p._cx,y2,p.col,p.dept);
+    });
+    drawCloud(o.x,o.y);
+    ag.forEach((def,i)=>{
+      const active=pk.some(p=>p.stage==='to-agent'&&p.agIdx===i&&p.prog>0.4);
+      drawAgent(def,active);
+    });
+    pk=pk.filter(p=>p.alpha>0.02);
+    pk.forEach(p=>{
+      if(p.stage==='to-cloud'){
+        p.prog+=p.speed;
+        const px=persons[p.srcPI];
+        const sx=px._cx||px.rx*W,sy=px._cy||px.ry*H;
+        p.x=lerp(sx,o.x,ease(p.prog));p.y=lerp(sy,o.y,ease(p.prog));
+        if(p.prog>=1){p.prog=0;p.stage='to-agent';p.sx=o.x;p.sy=o.y;}
+      } else {
+        p.prog+=p.speed*0.82;
+        const a=ap(ag[p.agIdx]);
+        p.x=lerp(p.sx,a.x,ease(p.prog));p.y=lerp(p.sy,a.y,ease(p.prog));
+        if(p.prog>=1){tg.push({x:a.x,y:a.y-28,ftIdx:p.ftIdx,alpha:1,vy:-0.5});p.alpha=0;}
+      }
+      drawPkt(p);
+    });
+    tg=tg.filter(t=>t.alpha>0.02);
+    tg.forEach(t=>{t.y+=t.vy;t.vy*=0.97;t.alpha-=0.007;drawTag(t);});
+    t++;requestAnimationFrame(frame);
+  }
+  frame();
+})();
+</script>
 ```
 
+
 <!-- ═══ SLIDE 9: MOCK UP ═══ -->
-## 🖥️ Mock Up — สิ่งที่จะสร้างให้ ETDA {background-color="#0A1628"}
+## 🖥️ Mock Up {background-color="#0A1628"}
 
 ```{=html}
 <style>
 @keyframes agentPulse{0%,100%{box-shadow:0 0 8px rgba(0,188,212,0.4);}50%{box-shadow:0 0 20px rgba(0,188,212,0.9);}}
 @keyframes agentPulse2{0%,100%{box-shadow:0 0 8px rgba(124,77,255,0.4);}50%{box-shadow:0 0 20px rgba(124,77,255,0.9);}}
-@keyframes scanLine2{0%{transform:translateY(-100%);}100%{transform:translateY(400px);}}
-@keyframes fileSlide{0%{transform:translateX(-30px);opacity:0;}100%{transform:translateX(0);opacity:1;}}
+@keyframes agentPulse3{0%,100%{box-shadow:0 0 8px rgba(255,167,38,0.4);}50%{box-shadow:0 0 20px rgba(255,167,38,0.9);}}
+@keyframes scanLine2{0%{transform:translateY(-100%);}100%{transform:translateY(500px);}}
+@keyframes fileSlide{0%{transform:translateX(-20px);opacity:0;}100%{transform:translateX(0);opacity:1;}}
 @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
-@keyframes notifPop{0%{transform:translateY(20px);opacity:0;}100%{transform:translateY(0);opacity:1;}}
-@keyframes rowGlow{0%,100%{background:rgba(0,188,212,0.03);}50%{background:rgba(0,188,212,0.09);}}
+@keyframes notifPop{0%{transform:translateY(10px);opacity:0;}100%{transform:translateY(0);opacity:1;}}
 @keyframes shimmer{0%{background-position:-200% center;}100%{background-position:200% center;}}
+@keyframes rowIn{0%{opacity:0;transform:translateX(10px);}100%{opacity:1;transform:translateX(0);}}
 </style>
 
-<div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.6em;">
+<div style="font-family:'Inter','Sarabun',sans-serif;font-size:0.58em;">
 
-<!-- Tabs -->
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5em;margin-bottom:0.7em;">
-  <div id="btn-mock-1" onclick="changeMockup(1)" style="cursor:pointer;border-radius:9px;padding:0.55em;text-align:center;border:2px solid #7C4DFF;background:linear-gradient(135deg,rgba(124,77,255,0.25),rgba(124,77,255,0.1));transition:0.3s;">
-    <div style="font-size:1.3em;margin-bottom:0.1em;">🤖</div>
-    <strong style="color:#7C4DFF;font-size:1em;">1. AI Auto-Labelling</strong>
-    <div style="color:#8899aa;font-size:0.8em;margin-top:0.1em;">2 Agents ทำงานพร้อมกัน</div>
+<!-- Tabs: 4 -->
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.4em;margin-bottom:0.55em;">
+  <div id="btn-mock-1" onclick="changeMockup(1)" style="cursor:pointer;border-radius:9px;padding:0.45em;text-align:center;border:2px solid #EF5350;background:linear-gradient(135deg,rgba(239,83,80,0.22),rgba(239,83,80,0.08));transition:0.3s;">
+    <div style="font-size:1.2em;margin-bottom:0.05em;">⏳</div>
+    <strong style="color:#EF5350;font-size:0.95em;">Retention Agent</strong>
+    <div style="color:#8899aa;font-size:0.75em;margin-top:0.05em;">ตรวจอายุ · แจ้ง Owner</div>
   </div>
-  <div id="btn-mock-2" onclick="changeMockup(2)" style="cursor:pointer;border-radius:9px;padding:0.55em;text-align:center;border:2px solid transparent;background:rgba(255,255,255,0.04);transition:0.3s;">
-    <div style="font-size:1.3em;margin-bottom:0.1em;">⏳</div>
-    <strong style="color:#1E88E5;font-size:1em;">2. Lifecycle Policy</strong>
-    <div style="color:#8899aa;font-size:0.8em;margin-top:0.1em;">Rule Engine + Data Owner</div>
+  <div id="btn-mock-2" onclick="changeMockup(2)" style="cursor:pointer;border-radius:9px;padding:0.45em;text-align:center;border:2px solid transparent;background:rgba(255,255,255,0.04);transition:0.3s;">
+    <div style="font-size:1.2em;margin-bottom:0.05em;">🔒</div>
+    <strong style="color:#00BCD4;font-size:0.95em;">Classification Agent</strong>
+    <div style="color:#8899aa;font-size:0.75em;margin-top:0.05em;">จำแนกชั้นความลับ</div>
   </div>
-  <div id="btn-mock-3" onclick="changeMockup(3)" style="cursor:pointer;border-radius:9px;padding:0.55em;text-align:center;border:2px solid transparent;background:rgba(255,255,255,0.04);transition:0.3s;">
-    <div style="font-size:1.3em;margin-bottom:0.1em;">📋</div>
-    <strong style="color:#00BCD4;font-size:1em;">3. Data Catalog</strong>
-    <div style="color:#8899aa;font-size:0.8em;margin-top:0.1em;">ETDA Assets + Metadata</div>
+  <div id="btn-mock-3" onclick="changeMockup(3)" style="cursor:pointer;border-radius:9px;padding:0.45em;text-align:center;border:2px solid transparent;background:rgba(255,255,255,0.04);transition:0.3s;">
+    <div style="font-size:1.2em;margin-bottom:0.05em;">🏷️</div>
+    <strong style="color:#7C4DFF;font-size:0.95em;">DocType Agent</strong>
+    <div style="color:#8899aa;font-size:0.75em;margin-top:0.05em;">ติดแท็กประเภทเอกสาร</div>
+  </div>
+  <div id="btn-mock-4" onclick="changeMockup(4)" style="cursor:pointer;border-radius:9px;padding:0.45em;text-align:center;border:2px solid transparent;background:rgba(255,255,255,0.04);transition:0.3s;">
+    <div style="font-size:1.2em;margin-bottom:0.05em;">🗂️</div>
+    <strong style="color:#FFB300;font-size:0.95em;">Data Catalog</strong>
+    <div style="color:#8899aa;font-size:0.75em;margin-top:0.05em;">ทะเบียนข้อมูลกลาง</div>
   </div>
 </div>
 
-<div style="border:1px solid rgba(0,188,212,0.18);border-radius:12px;background:#080f20;height:430px;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.6);">
+<div style="border:1px solid rgba(0,188,212,0.18);border-radius:12px;background:#080f20;height:420px;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.6);">
 
-<!-- ══ PANEL 1 ══ -->
-<div id="panel-mock-1" style="display:block;padding:1em;height:100%;box-sizing:border-box;">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.7em;">
-    <div style="font-size:1.05em;font-weight:700;color:#FFF;">🤖 AI Auto-Labelling — 2 Agents ทำงานพร้อมกัน</div>
-    <span style="background:rgba(0,230,118,0.15);border:1px solid #00E676;color:#00E676;padding:0.15em 0.7em;border-radius:20px;font-weight:700;font-size:0.8em;animation:agentPulse 2s infinite;">● LIVE</span>
+<!-- ══ PANEL 1: RETENTION AGENT ══ -->
+<div id="panel-mock-1" style="display:block;padding:0.9em;height:100%;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6em;">
+    <div>
+      <div style="font-size:1em;font-weight:700;color:#FFF;">⏳ Retention Agent — ผู้พิทักษ์กาล</div>
+      <div style="font-size:0.62em;color:#506070;margin-top:0.05em;">ตรวจอายุไฟล์ · เทียบ Retention Policy · แจ้ง Data Owner เพื่อ Archive หรือทำลาย</div>
+    </div>
+    <span style="background:rgba(239,83,80,0.15);border:1px solid #EF5350;color:#EF5350;padding:0.12em 0.6em;border-radius:20px;font-weight:700;font-size:0.72em;animation:agentPulse 2s infinite;">● SCANNING</span>
   </div>
-  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:0.8em;height:88%;">
+  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:0.7em;height:88%;">
 
-    <!-- File Queue -->
-    <div style="background:rgba(6,14,30,0.8);border:1px solid rgba(255,255,255,0.07);border-radius:9px;padding:0.7em;display:flex;flex-direction:column;gap:0.3em;overflow:hidden;">
-      <div style="color:#456070;font-size:0.72em;font-weight:700;margin-bottom:0.15em;flex:0 0 auto;">📂 ไฟล์เข้าคิววิเคราะห์</div>
-      <div id="file-queue" style="display:flex;flex-direction:column;gap:0.25em;overflow:hidden;flex:1;"></div>
+    <!-- Left: File list with retention status -->
+    <div style="background:rgba(6,14,30,0.8);border:1px solid rgba(239,83,80,0.2);border-radius:9px;padding:0.6em;display:flex;flex-direction:column;gap:0.18em;overflow:hidden;">
+      <div style="color:#607080;font-size:0.62em;font-weight:700;margin-bottom:0.1em;flex:0 0 auto;">📂 ไฟล์ที่ระบบตรวจพบ</div>
+      <div style="font-size:0.6em;display:grid;grid-template-columns:2fr 0.8fr 1fr;gap:0.2em;color:#456070;padding:0 0.2em;flex:0 0 auto;">
+        <div>ชื่อไฟล์</div><div>อายุ</div><div>สถานะ</div>
+      </div>
+      <div id="ret-list" style="display:flex;flex-direction:column;gap:0.12em;overflow:hidden;flex:1;"></div>
     </div>
 
-    <!-- Agent 1 -->
-    <div style="background:rgba(6,14,30,0.8);border:1.5px solid rgba(0,188,212,0.4);border-radius:9px;padding:0.7em;display:flex;flex-direction:column;animation:agentPulse 3s ease-in-out infinite;position:relative;overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,#00BCD4,transparent);animation:scanLine2 2s linear infinite;"></div>
-      <div style="display:flex;align-items:center;gap:0.45em;margin-bottom:0.45em;flex:0 0 auto;">
-        <div style="position:relative;width:30px;height:30px;">
+    <!-- Right: Action Panel -->
+    <div style="display:flex;flex-direction:column;gap:0.4em;">
+
+      <!-- Agent Icon -->
+      <div style="background:rgba(239,83,80,0.08);border:1.5px solid rgba(239,83,80,0.35);border-radius:9px;padding:0.5em;display:flex;flex-direction:column;align-items:center;gap:0.2em;position:relative;overflow:hidden;flex:0 0 auto;">
+        <div style="position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,#EF5350,transparent);animation:scanLine2 2.5s linear infinite;"></div>
+        <div style="position:relative;width:36px;height:36px;">
+          <div style="position:absolute;inset:-3px;border:2px solid rgba(239,83,80,0.4);border-top-color:#EF5350;border-radius:50%;animation:spin 1.8s linear infinite;"></div>
+          <div style="width:36px;height:36px;background:rgba(239,83,80,0.15);border-radius:50%;border:1px solid #EF5350;display:flex;align-items:center;justify-content:center;font-size:1.2em;">⏳</div>
+        </div>
+        <div style="font-size:0.62em;color:#EF5350;font-weight:700;">Retention Agent</div>
+        <div style="font-size:0.55em;color:#506070;">กำลังวิเคราะห์ทุกไฟล์</div>
+      </div>
+
+      <!-- Notification to Data Owner -->
+      <div style="flex:1;background:rgba(6,14,30,0.8);border:1px solid rgba(255,167,38,0.2);border-radius:9px;padding:0.5em;overflow:hidden;">
+        <div style="font-size:0.62em;color:#FFB300;font-weight:700;margin-bottom:0.2em;">📬 แจ้ง Data Owner</div>
+        <div id="ret-notif" style="display:flex;flex-direction:column;gap:0.18em;"></div>
+      </div>
+
+      <!-- Summary -->
+      <div style="background:rgba(239,83,80,0.07);border:1px solid rgba(239,83,80,0.2);border-radius:8px;padding:0.4em;flex:0 0 auto;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.2em;text-align:center;font-size:0.6em;">
+          <div><div style="font-size:1.4em;font-weight:800;color:#EF5350;" id="ret-cnt-over">0</div><div style="color:#607080;">เกินกำหนด</div></div>
+          <div><div style="font-size:1.4em;font-weight:800;color:#FFA726;" id="ret-cnt-soon">0</div><div style="color:#607080;">ใกล้ครบ</div></div>
+          <div><div style="font-size:1.4em;font-weight:800;color:#00E676;" id="ret-cnt-ok">0</div><div style="color:#607080;">ปกติ</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PANEL 2: CLASSIFICATION AGENT ══ -->
+<div id="panel-mock-2" style="display:none;padding:0.9em;height:100%;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6em;">
+    <div>
+      <div style="font-size:1em;font-weight:700;color:#FFF;">🔒 Classification Agent — ผู้จำแนกระดับ</div>
+      <div style="font-size:0.62em;color:#506070;margin-top:0.05em;">อ่านเนื้อหาไฟล์ · NLP ประเมินชั้นความลับ · ติด Label อัตโนมัติ</div>
+    </div>
+    <span style="background:rgba(0,188,212,0.15);border:1px solid #00BCD4;color:#00BCD4;padding:0.12em 0.6em;border-radius:20px;font-weight:700;font-size:0.72em;animation:agentPulse 2s infinite;">● READING</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:0.7em;height:88%;">
+
+    <!-- Left: Files with classification result -->
+    <div style="background:rgba(6,14,30,0.8);border:1px solid rgba(0,188,212,0.2);border-radius:9px;padding:0.6em;display:flex;flex-direction:column;gap:0.18em;overflow:hidden;">
+      <div style="color:#607080;font-size:0.62em;font-weight:700;margin-bottom:0.1em;flex:0 0 auto;">📂 ผลการจำแนกชั้นความลับ</div>
+      <div style="font-size:0.6em;display:grid;grid-template-columns:2fr 1fr 0.8fr;gap:0.2em;color:#456070;padding:0 0.2em;flex:0 0 auto;">
+        <div>ชื่อไฟล์</div><div>ระดับ</div><div>Conf.</div>
+      </div>
+      <div id="cls-list" style="display:flex;flex-direction:column;gap:0.12em;overflow:hidden;flex:1;"></div>
+    </div>
+
+    <!-- Right -->
+    <div style="display:flex;flex-direction:column;gap:0.4em;">
+      <div style="background:rgba(0,188,212,0.08);border:1.5px solid rgba(0,188,212,0.35);border-radius:9px;padding:0.5em;display:flex;flex-direction:column;align-items:center;gap:0.2em;position:relative;overflow:hidden;flex:0 0 auto;">
+        <div style="position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,#00BCD4,transparent);animation:scanLine2 2s linear infinite;"></div>
+        <div style="position:relative;width:36px;height:36px;">
           <div style="position:absolute;inset:-3px;border:2px solid rgba(0,188,212,0.4);border-top-color:#00BCD4;border-radius:50%;animation:spin 1.5s linear infinite;"></div>
-          <div style="width:30px;height:30px;background:rgba(0,188,212,0.12);border-radius:50%;border:1px solid #00BCD4;display:flex;align-items:center;justify-content:center;font-size:0.95em;">🔒</div>
+          <div style="width:36px;height:36px;background:rgba(0,188,212,0.15);border-radius:50%;border:1px solid #00BCD4;display:flex;align-items:center;justify-content:center;font-size:1.2em;">🔒</div>
         </div>
-        <div><div style="color:#00BCD4;font-weight:800;font-size:0.8em;">Classification Agent</div><div style="color:#456070;font-size:0.6em;">ชั้นความลับข้อมูล</div></div>
+        <div style="font-size:0.62em;color:#00BCD4;font-weight:700;">Classification Agent</div>
+        <div id="cls-reading" style="font-size:0.52em;color:#456070;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:130px;"></div>
       </div>
-      <div style="color:#607080;font-size:0.65em;margin-bottom:0.2em;flex:0 0 auto;">กำลังวิเคราะห์:</div>
-      <div id="cls-current" style="background:rgba(0,188,212,0.07);border:1px solid rgba(0,188,212,0.2);border-radius:5px;padding:0.25em 0.4em;font-size:0.65em;color:#A0B4C8;margin-bottom:0.35em;flex:0 0 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></div>
-      <div style="display:flex;flex-direction:column;gap:0.15em;flex:1;">
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(239,83,80,0.07);border-radius:4px;padding:0.18em 0.38em;">
-          <span style="color:#EF5350;font-size:0.65em;">🔴 ลับมาก</span><span id="cls-r-n" style="color:#EF5350;font-weight:800;font-size:0.7em;">0</span>
+
+      <!-- Label distribution -->
+      <div style="flex:1;background:rgba(6,14,30,0.8);border:1px solid rgba(0,188,212,0.15);border-radius:9px;padding:0.5em;">
+        <div style="font-size:0.62em;color:#B0BEC5;font-weight:700;margin-bottom:0.3em;">🛡️ สัดส่วนชั้นความลับ</div>
+        <div style="display:flex;flex-direction:column;gap:0.28em;font-size:0.6em;">
+          <div>
+            <div style="display:flex;justify-content:space-between;color:#EF5350;margin-bottom:0.1em;"><span>🔴 ลับมาก</span><span id="cls-r-pct">15%</span></div>
+            <div style="background:#1a2a40;border-radius:3px;height:6px;"><div id="cls-r-bar" style="width:15%;height:100%;background:#EF5350;border-radius:3px;transition:width 0.5s;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;color:#FFA726;margin-bottom:0.1em;"><span>🟡 ภายใน</span><span id="cls-i-pct">52%</span></div>
+            <div style="background:#1a2a40;border-radius:3px;height:6px;"><div id="cls-i-bar" style="width:52%;height:100%;background:#FFA726;border-radius:3px;transition:width 0.5s;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;color:#00BCD4;margin-bottom:0.1em;"><span>🔵 ทั่วไป</span><span id="cls-p-pct">33%</span></div>
+            <div style="background:#1a2a40;border-radius:3px;height:6px;"><div id="cls-p-bar" style="width:33%;height:100%;background:#00BCD4;border-radius:3px;transition:width 0.5s;"></div></div>
+          </div>
         </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,167,38,0.07);border-radius:4px;padding:0.18em 0.38em;">
-          <span style="color:#FFA726;font-size:0.65em;">🟡 ภายใน</span><span id="cls-i-n" style="color:#FFA726;font-weight:800;font-size:0.7em;">0</span>
-        </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(0,188,212,0.07);border-radius:4px;padding:0.18em 0.38em;">
-          <span style="color:#00BCD4;font-size:0.65em;">🔵 ทั่วไป</span><span id="cls-p-n" style="color:#00BCD4;font-weight:800;font-size:0.7em;">0</span>
-        </div>
-        <div style="margin-top:auto;background:rgba(0,230,118,0.07);border:1px solid rgba(0,230,118,0.2);border-radius:6px;padding:0.3em;text-align:center;">
-          <div style="font-size:1.4em;font-weight:800;color:#00E676;">94.2%</div>
-          <div style="font-size:0.58em;color:#506070;">NLP Accuracy</div>
-        </div>
+      </div>
+
+      <!-- Accuracy -->
+      <div style="background:rgba(0,230,118,0.07);border:1px solid rgba(0,230,118,0.2);border-radius:8px;padding:0.4em;text-align:center;flex:0 0 auto;">
+        <div style="font-size:1.6em;font-weight:800;color:#00E676;">94.2%</div>
+        <div style="font-size:0.58em;color:#506070;">NLP Accuracy · Thai Language</div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Agent 2 -->
-    <div style="background:rgba(6,14,30,0.8);border:1.5px solid rgba(124,77,255,0.4);border-radius:9px;padding:0.7em;display:flex;flex-direction:column;animation:agentPulse2 3s ease-in-out 1s infinite;position:relative;overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,#7C4DFF,transparent);animation:scanLine2 2.5s linear 0.5s infinite;"></div>
-      <div style="display:flex;align-items:center;gap:0.45em;margin-bottom:0.45em;flex:0 0 auto;">
-        <div style="position:relative;width:30px;height:30px;">
+<!-- ══ PANEL 3: DOCTYPE AGENT ══ -->
+<div id="panel-mock-3" style="display:none;padding:0.9em;height:100%;box-sizing:border-box;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6em;">
+    <div>
+      <div style="font-size:1em;font-weight:700;color:#FFF;">🏷️ DocType Agent — บรรณารักษา</div>
+      <div style="font-size:0.62em;color:#506070;margin-top:0.05em;">วิเคราะห์โครงสร้างเอกสาร · ติดแท็กประเภท · เชื่อม Data Catalog อัตโนมัติ</div>
+    </div>
+    <span style="background:rgba(124,77,255,0.15);border:1px solid #7C4DFF;color:#9B72FF;padding:0.12em 0.6em;border-radius:20px;font-weight:700;font-size:0.72em;animation:agentPulse2 2s infinite;">● TAGGING</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:0.7em;height:88%;">
+
+    <!-- Left: Files with doctype tags -->
+    <div style="background:rgba(6,14,30,0.8);border:1px solid rgba(124,77,255,0.2);border-radius:9px;padding:0.6em;display:flex;flex-direction:column;gap:0.18em;overflow:hidden;">
+      <div style="color:#607080;font-size:0.62em;font-weight:700;margin-bottom:0.1em;flex:0 0 auto;">📂 ผลการติดแท็กประเภทเอกสาร</div>
+      <div style="font-size:0.6em;display:grid;grid-template-columns:2fr 1fr 0.8fr;gap:0.2em;color:#456070;padding:0 0.2em;flex:0 0 auto;">
+        <div>ชื่อไฟล์</div><div>ประเภท</div><div>Conf.</div>
+      </div>
+      <div id="doc-list" style="display:flex;flex-direction:column;gap:0.12em;overflow:hidden;flex:1;"></div>
+    </div>
+
+    <!-- Right -->
+    <div style="display:flex;flex-direction:column;gap:0.4em;">
+      <div style="background:rgba(124,77,255,0.08);border:1.5px solid rgba(124,77,255,0.35);border-radius:9px;padding:0.5em;display:flex;flex-direction:column;align-items:center;gap:0.2em;position:relative;overflow:hidden;flex:0 0 auto;">
+        <div style="position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,#7C4DFF,transparent);animation:scanLine2 2.2s linear infinite;"></div>
+        <div style="position:relative;width:36px;height:36px;">
           <div style="position:absolute;inset:-3px;border:2px solid rgba(124,77,255,0.4);border-top-color:#7C4DFF;border-radius:50%;animation:spin 2s linear infinite;"></div>
-          <div style="width:30px;height:30px;background:rgba(124,77,255,0.12);border-radius:50%;border:1px solid #7C4DFF;display:flex;align-items:center;justify-content:center;font-size:0.95em;">🏷️</div>
+          <div style="width:36px;height:36px;background:rgba(124,77,255,0.15);border-radius:50%;border:1px solid #7C4DFF;display:flex;align-items:center;justify-content:center;font-size:1.2em;">🏷️</div>
         </div>
-        <div><div style="color:#7C4DFF;font-weight:800;font-size:0.8em;">DocType Agent</div><div style="color:#456070;font-size:0.6em;">ประเภทเอกสาร</div></div>
+        <div style="font-size:0.62em;color:#7C4DFF;font-weight:700;">DocType Agent · บรรณารักษา</div>
+        <div style="font-size:0.52em;color:#456070;">ติดแท็กอัตโนมัติทุกไฟล์</div>
       </div>
-      <div style="color:#607080;font-size:0.65em;margin-bottom:0.18em;flex:0 0 auto;">ประเภทที่ตรวจพบ:</div>
-      <div style="display:flex;flex-direction:column;gap:0.13em;flex:1;">
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,179,0,0.06);border-radius:4px;padding:0.16em 0.35em;"><span style="color:#FFB300;font-size:0.62em;">🤝 ประชุมบอร์ด</span><span id="dt-b-n" style="color:#FFB300;font-weight:800;font-size:0.67em;">0</span></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(30,136,229,0.06);border-radius:4px;padding:0.16em 0.35em;"><span style="color:#64B5F6;font-size:0.62em;">📝 TOR</span><span id="dt-t-n" style="color:#64B5F6;font-weight:800;font-size:0.67em;">0</span></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(0,230,118,0.06);border-radius:4px;padding:0.16em 0.35em;"><span style="color:#00E676;font-size:0.62em;">💵 ใบเสร็จ</span><span id="dt-r-n" style="color:#00E676;font-weight:800;font-size:0.67em;">0</span></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(124,77,255,0.06);border-radius:4px;padding:0.16em 0.35em;"><span style="color:#9B72FF;font-size:0.62em;">👥 เอกสาร HR</span><span id="dt-h-n" style="color:#9B72FF;font-weight:800;font-size:0.67em;">0</span></div>
-        <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.04);border-radius:4px;padding:0.16em 0.35em;"><span style="color:#78909C;font-size:0.62em;">📄 อื่นๆ</span><span id="dt-o-n" style="color:#78909C;font-weight:800;font-size:0.67em;">0</span></div>
-        <div style="margin-top:auto;background:rgba(124,77,255,0.07);border:1px solid rgba(124,77,255,0.2);border-radius:6px;padding:0.3em;text-align:center;">
-          <div style="font-size:1.4em;font-weight:800;color:#9B72FF;">91.8%</div>
-          <div style="font-size:0.58em;color:#506070;">DocType Accuracy</div>
+
+      <!-- DocType counts -->
+      <div style="flex:1;background:rgba(6,14,30,0.8);border:1px solid rgba(124,77,255,0.15);border-radius:9px;padding:0.5em;">
+        <div style="font-size:0.62em;color:#B0BEC5;font-weight:700;margin-bottom:0.25em;">📊 ประเภทเอกสารที่พบ</div>
+        <div style="display:flex;flex-direction:column;gap:0.18em;font-size:0.6em;">
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,179,0,0.06);border-radius:4px;padding:0.14em 0.35em;">
+            <span style="color:#FFB300;">🤝 ประชุมบอร์ด</span><span id="doc-b" style="color:#FFB300;font-weight:700;">0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(100,181,246,0.06);border-radius:4px;padding:0.14em 0.35em;">
+            <span style="color:#64B5F6;">📝 TOR / ข้อกำหนด</span><span id="doc-t" style="color:#64B5F6;font-weight:700;">0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(0,230,118,0.06);border-radius:4px;padding:0.14em 0.35em;">
+            <span style="color:#00E676;">💵 ใบเสร็จรับเงิน</span><span id="doc-r" style="color:#00E676;font-weight:700;">0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(124,77,255,0.06);border-radius:4px;padding:0.14em 0.35em;">
+            <span style="color:#9B72FF;">👥 เอกสาร HR</span><span id="doc-h" style="color:#9B72FF;font-weight:700;">0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.04);border-radius:4px;padding:0.14em 0.35em;">
+            <span style="color:#78909C;">📄 อื่นๆ</span><span id="doc-o" style="color:#78909C;font-weight:700;">0</span>
+          </div>
         </div>
+      </div>
+
+      <div style="background:rgba(124,77,255,0.07);border:1px solid rgba(124,77,255,0.2);border-radius:8px;padding:0.4em;text-align:center;flex:0 0 auto;">
+        <div style="font-size:1.6em;font-weight:800;color:#9B72FF;">91.8%</div>
+        <div style="font-size:0.58em;color:#506070;">DocType Accuracy</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══ PANEL 2 ══ -->
-<div id="panel-mock-2" style="display:none;padding:1em;height:100%;box-sizing:border-box;">
-  <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:0.8em;height:100%;">
-    <div style="display:flex;flex-direction:column;gap:0.38em;overflow:hidden;">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;">
-        <div style="font-size:1em;font-weight:700;color:#FFF;">⚙️ Rule Engine — ตรวจเงื่อนไขอัตโนมัติ</div>
-        <div style="display:flex;align-items:center;gap:0.3em;">
-          <div style="width:7px;height:7px;background:#00E676;border-radius:50%;animation:agentPulse 1.5s infinite;"></div>
-          <span style="color:#00E676;font-size:0.68em;font-weight:700;">SCANNING</span>
-        </div>
-      </div>
-      <div style="color:#456070;font-size:0.68em;flex:0 0 auto;">🤖 Bot วนตรวจทุกไฟล์ · พบเงื่อนไข → ส่ง Notification ถาม Data Owner</div>
-      <div style="display:flex;flex-direction:column;gap:0.2em;flex:1;overflow:hidden;">
-        <div style="background:rgba(239,83,80,0.06);border:1px solid rgba(239,83,80,0.18);border-left:3px solid #EF5350;border-radius:7px;padding:0.32em 0.55em;">
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <span style="color:#EF5350;font-size:0.7em;font-weight:700;">🔴 Confidential + อายุ > 7 ปี</span>
-            <span style="font-size:0.62em;color:#00E676;background:rgba(0,230,118,0.1);padding:0.08em 0.35em;border-radius:10px;">● Active</span>
-          </div>
-          <div style="color:#506070;font-size:0.6em;margin-top:0.08em;">→ แจ้ง CISO + ขอ Approve Archive</div>
-          <div style="color:#78909C;font-size:0.58em;margin-top:0.1em;">พบแล้ว: <span id="r1-found" style="color:#EF5350;font-weight:700;">0</span> ไฟล์</div>
-        </div>
-        <div style="background:rgba(255,167,38,0.05);border:1px solid rgba(255,167,38,0.18);border-left:3px solid #FFA726;border-radius:7px;padding:0.32em 0.55em;">
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <span style="color:#FFA726;font-size:0.7em;font-weight:700;">🟡 Internal + อายุ > 3 ปี + ไม่ถูกเปิด</span>
-            <span style="font-size:0.62em;color:#00E676;background:rgba(0,230,118,0.1);padding:0.08em 0.35em;border-radius:10px;">● Active</span>
-          </div>
-          <div style="color:#506070;font-size:0.6em;margin-top:0.08em;">→ ถาม Data Owner: Archive หรือยังใช้งาน?</div>
-          <div style="color:#78909C;font-size:0.58em;margin-top:0.1em;">พบแล้ว: <span id="r2-found" style="color:#FFA726;font-weight:700;">0</span> ไฟล์</div>
-        </div>
-        <div style="background:rgba(124,77,255,0.05);border:1px solid rgba(124,77,255,0.18);border-left:3px solid #7C4DFF;border-radius:7px;padding:0.32em 0.55em;">
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <span style="color:#9B72FF;font-size:0.7em;font-weight:700;">⚠️ PII ไม่มี Encrypt</span>
-            <span style="font-size:0.62em;color:#00E676;background:rgba(0,230,118,0.1);padding:0.08em 0.35em;border-radius:10px;">● Active</span>
-          </div>
-          <div style="color:#506070;font-size:0.6em;margin-top:0.08em;">→ Force Encrypt + แจ้งเตือน Data Owner ทันที</div>
-          <div style="color:#78909C;font-size:0.58em;margin-top:0.1em;">พบแล้ว: <span id="r3-found" style="color:#7C4DFF;font-weight:700;">0</span> ไฟล์</div>
-        </div>
-        <div style="background:rgba(0,188,212,0.05);border:1px solid rgba(0,188,212,0.18);border-left:3px solid #00BCD4;border-radius:7px;padding:0.32em 0.55em;">
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <span style="color:#00BCD4;font-size:0.7em;font-weight:700;">🔵 Public + อายุ > 5 ปี</span>
-            <span style="font-size:0.62em;color:#00E676;background:rgba(0,230,118,0.1);padding:0.08em 0.35em;border-radius:10px;">● Active</span>
-          </div>
-          <div style="color:#506070;font-size:0.6em;margin-top:0.08em;">→ แจ้งเตือน + รอ Approve ก่อน Delete</div>
-          <div style="color:#78909C;font-size:0.58em;margin-top:0.1em;">พบแล้ว: <span id="r4-found" style="color:#00BCD4;font-weight:700;">0</span> ไฟล์</div>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:0.32em;overflow:hidden;">
-      <div style="font-size:0.88em;font-weight:700;color:#FFF;flex:0 0 auto;">📬 แจ้งเตือน Data Owner</div>
-      <div style="flex:1;background:rgba(6,14,30,0.8);border:1px solid rgba(255,255,255,0.07);border-radius:9px;padding:0.55em;overflow:hidden;">
-        <div id="notif-feed" style="display:flex;flex-direction:column;gap:0.28em;"></div>
-      </div>
-      <div style="background:rgba(0,230,118,0.06);border:1px solid rgba(0,230,118,0.18);border-radius:8px;padding:0.38em 0.55em;flex:0 0 auto;">
-        <div style="font-size:0.65em;color:#607080;margin-bottom:0.12em;">สรุปวันนี้</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.3em;text-align:center;">
-          <div><div style="font-size:1.15em;font-weight:800;color:#FFA726;" id="sum-pending">0</div><div style="font-size:0.58em;color:#607080;">รอ Approve</div></div>
-          <div><div style="font-size:1.15em;font-weight:800;color:#00E676;" id="sum-approved">0</div><div style="font-size:0.58em;color:#607080;">Approved</div></div>
-          <div><div style="font-size:1.15em;font-weight:800;color:#EF5350;" id="sum-action">0</div><div style="font-size:0.58em;color:#607080;">ดำเนินการแล้ว</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- ══ PANEL 4: DATA CATALOG ══ -->
+<div id="panel-mock-4" style="display:none;padding:0.9em;height:100%;box-sizing:border-box;flex-direction:column;gap:0.4em;">
 
-<!-- ══ PANEL 3: DATA CATALOG (REDESIGNED) ══ -->
-<div id="panel-mock-3" style="display:none;padding:0.9em;height:100%;box-sizing:border-box;flex-direction:column;gap:0.45em;">
-
-  <!-- Header -->
   <div style="display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;">
-    <div style="display:flex;align-items:center;gap:0.5em;">
-      <div style="width:28px;height:28px;background:linear-gradient(135deg,#00BCD4,#0288D1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1em;box-shadow:0 3px 10px rgba(0,188,212,0.4);">🗂️</div>
+    <div style="display:flex;align-items:center;gap:0.45em;">
+      <div style="width:26px;height:26px;background:linear-gradient(135deg,#FFB300,#F57C00);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:0.95em;box-shadow:0 3px 10px rgba(255,179,0,0.4);">🗂️</div>
       <div>
-        <div style="font-size:1em;font-weight:800;color:#FFF;">ETDA Data Catalog</div>
-        <div style="font-size:0.6em;color:rgba(0,188,212,0.6);letter-spacing:0.04em;">ทะเบียนข้อมูลกลางองค์กร · Governed by AI</div>
+        <div style="font-size:0.95em;font-weight:800;color:#FFF;">ETDA Data Catalog — ทะเบียนข้อมูลกลาง</div>
+        <div style="font-size:0.56em;color:rgba(255,179,0,0.6);">ผลลัพธ์จาก AI Agents ทั้ง 3 ตัว · Governed by AI · Real-time</div>
       </div>
     </div>
-    <div style="display:flex;gap:0.38em;align-items:center;">
-      <div style="position:relative;">
-        <input type="text" placeholder="🔍 ค้นหา asset..." style="width:170px;padding:0.28em 0.65em;border-radius:15px;border:1px solid rgba(0,188,212,0.3);background:rgba(6,14,30,0.8);color:#FFF;outline:none;font-size:0.68em;">
-      </div>
-      <select style="background:rgba(6,14,30,0.8);border:1px solid rgba(0,188,212,0.25);border-radius:6px;color:#C0CDD8;padding:0.25em 0.4em;font-size:0.65em;">
+    <div style="display:flex;gap:0.35em;">
+      <input type="text" placeholder="🔍 ค้นหา..." style="width:140px;padding:0.25em 0.6em;border-radius:12px;border:1px solid rgba(255,179,0,0.3);background:rgba(6,14,30,0.8);color:#FFF;outline:none;font-size:0.62em;">
+      <select style="background:rgba(6,14,30,0.8);border:1px solid rgba(255,179,0,0.25);border-radius:5px;color:#C0CDD8;padding:0.22em 0.35em;font-size:0.6em;">
         <option>ทุก Label</option><option>🔴 Conf.</option><option>🟡 Internal</option><option>🔵 Public</option>
-      </select>
-      <select style="background:rgba(6,14,30,0.8);border:1px solid rgba(0,188,212,0.25);border-radius:6px;color:#C0CDD8;padding:0.25em 0.4em;font-size:0.65em;">
-        <option>ทุกประเภท</option><option>📊 Dashboard</option><option>📑 Official Doc</option><option>💾 Dataset</option><option>📝 เอกสาร</option>
       </select>
     </div>
   </div>
 
   <!-- Table -->
-  <div style="flex:1;background:rgba(4,10,24,0.9);border:1px solid rgba(0,188,212,0.12);border-radius:10px;overflow:auto;position:relative;">
-
-    <!-- Glow top border -->
-    <div style="position:sticky;top:0;z-index:10;background:linear-gradient(90deg,rgba(0,188,212,0.18),rgba(124,77,255,0.12),rgba(0,188,212,0.18));border-bottom:1px solid rgba(0,188,212,0.2);">
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.42em 0.6em;gap:0.3em;font-size:0.64em;font-weight:700;color:#00BCD4;letter-spacing:0.03em;">
-        <div>Asset Name</div>
-        <div>Label</div>
-        <div>ประเภท</div>
-        <div>Data Owner</div>
-        <div>Data Location</div>
-        <div>Metadata</div>
-        <div style="text-align:center;">Status</div>
+  <div style="flex:1;background:rgba(4,10,24,0.9);border:1px solid rgba(255,179,0,0.12);border-radius:10px;overflow:auto;">
+    <div style="position:sticky;top:0;z-index:10;background:linear-gradient(90deg,rgba(255,179,0,0.15),rgba(255,167,38,0.08),rgba(255,179,0,0.15));border-bottom:1px solid rgba(255,179,0,0.2);">
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.4em 0.55em;gap:0.25em;font-size:0.6em;font-weight:700;color:#FFB300;letter-spacing:0.03em;">
+        <div>Asset Name</div><div>Label</div><div>ประเภท</div><div>Data Owner</div><div>Data Location</div><div>Metadata</div><div style="text-align:center;">Status</div>
       </div>
     </div>
+    <div style="display:flex;flex-direction:column;padding:0.15em 0;">
 
-    <div style="display:flex;flex-direction:column;padding:0.2em 0;">
-
-      <!-- Row 1: 1212 Dashboard -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,188,212,0.06)'" onmouseout="this.style.background='transparent'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">📊</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">1212 Complaint Dashboard</span>
-        </div>
-        <div><span style="background:rgba(255,167,38,0.15);color:#FFA726;border:1px solid rgba(255,167,38,0.35);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🟡 Internal</span></div>
-        <div><span style="background:rgba(30,136,229,0.12);color:#64B5F6;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">📊 Dashboard</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ทีม DAC</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Power BI Workspace</div>
-        <div style="color:#607080;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Source: 1212.csv · Daily refresh</div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,179,0,0.05)'" onmouseout="this.style.background='transparent'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>📊</span><span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">1212 Complaint Dashboard</span></div>
+        <div><span style="background:rgba(255,167,38,0.15);color:#FFA726;border:1px solid rgba(255,167,38,0.3);padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">🟡</span></div>
+        <div><span style="background:rgba(30,136,229,0.1);color:#64B5F6;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">📊 Dashboard</span></div>
+        <div style="color:#00BCD4;font-size:0.9em;">ทีม DAC</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Power BI Workspace</div>
+        <div style="color:#607080;font-size:0.85em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Source: 1212.csv · Daily</div>
+        <div style="text-align:center;color:#00E676;">✅</div>
       </div>
 
-      <!-- Row 2: ThaiD Dashboard -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;background:rgba(239,83,80,0.02);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.07)'" onmouseout="this.style.background='rgba(239,83,80,0.02)'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">📊</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ThaiD Usage Dashboard</span>
-        </div>
-        <div><span style="background:rgba(239,83,80,0.15);color:#EF5350;border:1px solid rgba(239,83,80,0.35);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🔴 ลับมาก</span></div>
-        <div><span style="background:rgba(30,136,229,0.12);color:#64B5F6;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">📊 Dashboard</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ทีม DID</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Power BI Workspace</div>
-        <div style="display:flex;gap:0.25em;flex-wrap:wrap;"><span style="background:rgba(255,179,0,0.15);color:#FFB300;padding:0.05em 0.3em;border-radius:3px;font-size:0.82em;">⚠️ PII</span><span style="color:#607080;font-size:0.82em;">Monthly refresh</span></div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;background:rgba(239,83,80,0.02);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.06)'" onmouseout="this.style.background='rgba(239,83,80,0.02)'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>📊</span><span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ThaiD Usage Dashboard</span></div>
+        <div><span style="background:rgba(239,83,80,0.15);color:#EF5350;border:1px solid rgba(239,83,80,0.3);padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">🔴</span></div>
+        <div><span style="background:rgba(30,136,229,0.1);color:#64B5F6;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">📊 Dashboard</span></div>
+        <div style="color:#00BCD4;font-size:0.9em;">ทีม DID</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Power BI Workspace</div>
+        <div style="display:flex;gap:0.2em;"><span style="background:rgba(255,179,0,0.15);color:#FFB300;padding:0.04em 0.25em;border-radius:3px;font-size:0.82em;">⚠️ PII</span><span style="color:#607080;font-size:0.82em;">Monthly</span></div>
+        <div style="text-align:center;color:#00E676;">✅</div>
       </div>
 
-      <!-- Row 3: Annual Report -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,188,212,0.06)'" onmouseout="this.style.background='transparent'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">📑</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ETDA Annual Report 2567</span>
-        </div>
-        <div><span style="background:rgba(0,188,212,0.12);color:#00BCD4;border:1px solid rgba(0,188,212,0.3);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🔵 ทั่วไป</span></div>
-        <div><span style="background:rgba(0,230,118,0.1);color:#00E676;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">📑 Official Doc</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ฝ่ายสื่อสาร</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/Publications/</div>
-        <div style="color:#607080;font-size:0.88em;white-space:nowrap;">PDF · 8.2MB · เผยแพร่สาธารณะ</div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,179,0,0.05)'" onmouseout="this.style.background='transparent'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>📑</span><span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ETDA Annual Report 2567</span></div>
+        <div><span style="background:rgba(0,188,212,0.12);color:#00BCD4;border:1px solid rgba(0,188,212,0.28);padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">🔵</span></div>
+        <div><span style="background:rgba(0,230,118,0.08);color:#00E676;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">📑 Official</span></div>
+        <div style="color:#00BCD4;font-size:0.9em;">ฝ่ายสื่อสาร</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/Publications/</div>
+        <div style="color:#607080;font-size:0.85em;white-space:nowrap;">PDF · 8.2MB · สาธารณะ</div>
+        <div style="text-align:center;color:#00E676;">✅</div>
       </div>
 
-      <!-- Row 4: รายงาน DPS -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;background:rgba(255,167,38,0.02);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,167,38,0.07)'" onmouseout="this.style.background='rgba(255,167,38,0.02)'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">📑</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">รายงานประจำปี DPS 2567</span>
-        </div>
-        <div><span style="background:rgba(255,167,38,0.15);color:#FFA726;border:1px solid rgba(255,167,38,0.35);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🟡 Internal</span></div>
-        <div><span style="background:rgba(0,230,118,0.1);color:#00E676;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">📑 Official Doc</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ทีม DPS</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/DPS/Reports/</div>
-        <div style="color:#607080;font-size:0.88em;white-space:nowrap;">PDF · 4.5MB · Retention 5 ปี</div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;background:rgba(239,83,80,0.02);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.06)'" onmouseout="this.style.background='rgba(239,83,80,0.02)'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>💾</span><span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ecommerce_data_2025.csv</span></div>
+        <div><span style="background:rgba(239,83,80,0.15);color:#EF5350;border:1px solid rgba(239,83,80,0.3);padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">🔴</span></div>
+        <div><span style="background:rgba(124,77,255,0.1);color:#9B72FF;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">💾 Dataset</span></div>
+        <div style="color:#00BCD4;font-size:0.9em;">ทีม DAC</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/DAC/ecom/</div>
+        <div style="display:flex;gap:0.2em;"><span style="background:rgba(255,179,0,0.15);color:#FFB300;padding:0.04em 0.25em;border-radius:3px;font-size:0.82em;">⚠️ PII</span><span style="color:#607080;font-size:0.82em;">2.3MB</span></div>
+        <div style="text-align:center;color:#00E676;">✅</div>
       </div>
 
-      <!-- Row 5: ecommerce -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;background:rgba(239,83,80,0.02);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.07)'" onmouseout="this.style.background='rgba(239,83,80,0.02)'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">💾</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">ecommerce_data_2025.csv</span>
-        </div>
-        <div><span style="background:rgba(239,83,80,0.15);color:#EF5350;border:1px solid rgba(239,83,80,0.35);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🔴 ลับมาก</span></div>
-        <div><span style="background:rgba(124,77,255,0.12);color:#9B72FF;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">💾 Dataset</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ทีม DAC</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/DAC/ecom/</div>
-        <div style="display:flex;gap:0.25em;"><span style="background:rgba(255,179,0,0.15);color:#FFB300;padding:0.05em 0.3em;border-radius:3px;font-size:0.82em;">⚠️ PII</span><span style="color:#607080;font-size:0.82em;">2.3MB</span></div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,179,0,0.05)'" onmouseout="this.style.background='transparent'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>📝</span><span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">TOR_จ้างพัฒนาระบบ_AI_2025.pdf</span></div>
+        <div><span style="background:rgba(255,167,38,0.15);color:#FFA726;border:1px solid rgba(255,167,38,0.3);padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">🟡</span></div>
+        <div><span style="background:rgba(255,179,0,0.08);color:#FFB300;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">📝 เอกสาร</span></div>
+        <div style="color:#00BCD4;font-size:0.9em;">ฝ่ายจัดซื้อ</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/Procurement/</div>
+        <div style="color:#607080;font-size:0.85em;white-space:nowrap;">234KB · มี.ค. 68</div>
+        <div style="text-align:center;color:#00E676;">✅</div>
       </div>
 
-      <!-- Row 6: TOR -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;border-bottom:1px solid rgba(255,255,255,0.04);align-items:center;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,188,212,0.06)'" onmouseout="this.style.background='transparent'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">📝</span>
-          <span style="color:#FFF;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">TOR_จ้างพัฒนาระบบ_AI_2025.pdf</span>
-        </div>
-        <div><span style="background:rgba(255,167,38,0.15);color:#FFA726;border:1px solid rgba(255,167,38,0.35);padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">🟡 Internal</span></div>
-        <div><span style="background:rgba(255,179,0,0.1);color:#FFB300;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">📝 เอกสาร</span></div>
-        <div style="color:#00BCD4;white-space:nowrap;">ฝ่ายจัดซื้อ</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/Procurement/</div>
-        <div style="color:#607080;font-size:0.88em;white-space:nowrap;">234KB · มี.ค. 68</div>
-        <div style="text-align:center;"><span style="color:#00E676;font-size:1.1em;">✅</span></div>
-      </div>
-
-      <!-- Row 7: Server Config (No Policy) -->
-      <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 0.9fr 1fr 1.1fr 0.6fr;padding:0.38em 0.6em;gap:0.3em;font-size:0.64em;align-items:center;background:rgba(239,83,80,0.04);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.1)'" onmouseout="this.style.background='rgba(239,83,80,0.04)'">
-        <div style="display:flex;align-items:center;gap:0.35em;overflow:hidden;">
-          <span style="font-size:1.1em;">🔑</span>
-          <span style="color:#EF8080;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">server_config_backup_2022/</span>
-        </div>
-        <div><span style="background:rgba(255,255,255,0.08);color:#78909C;padding:0.1em 0.4em;border-radius:10px;font-size:0.88em;white-space:nowrap;">⚪ ไม่ระบุ</span></div>
-        <div><span style="background:rgba(239,83,80,0.1);color:#EF5350;padding:0.1em 0.4em;border-radius:5px;font-size:0.88em;">🔑 Credential?</span></div>
-        <div style="color:#EF5350;white-space:nowrap;">— ไม่ระบุ</div>
-        <div style="color:#506070;font-size:0.9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/IT/backup/</div>
-        <div style="color:#EF5350;font-size:0.88em;white-space:nowrap;">🚨 ไม่มี Policy</div>
-        <div style="text-align:center;"><span style="color:#EF5350;font-size:1.1em;">❌</span></div>
+      <div style="display:grid;grid-template-columns:1.8fr 0.65fr 0.85fr 0.85fr 1fr 1fr 0.55fr;padding:0.32em 0.55em;gap:0.25em;font-size:0.6em;align-items:center;background:rgba(239,83,80,0.04);transition:background 0.2s;" onmouseover="this.style.background='rgba(239,83,80,0.09)'" onmouseout="this.style.background='rgba(239,83,80,0.04)'">
+        <div style="display:flex;align-items:center;gap:0.3em;overflow:hidden;"><span>🔑</span><span style="color:#EF8080;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">server_config_backup_2022/</span></div>
+        <div><span style="background:rgba(255,255,255,0.07);color:#78909C;padding:0.08em 0.3em;border-radius:8px;font-size:0.88em;white-space:nowrap;">⚪</span></div>
+        <div><span style="background:rgba(239,83,80,0.1);color:#EF5350;padding:0.08em 0.3em;border-radius:4px;font-size:0.88em;">🔑 Credential?</span></div>
+        <div style="color:#EF5350;font-size:0.9em;">— ไม่ระบุ</div>
+        <div style="color:#506070;font-size:0.88em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">OneDrive/IT/backup/</div>
+        <div style="color:#EF5350;font-size:0.85em;white-space:nowrap;">🚨 ไม่มี Policy</div>
+        <div style="text-align:center;color:#EF5350;">❌</div>
       </div>
 
     </div>
   </div>
 
-  <!-- Footer legend -->
-  <div style="display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;padding:0 0.2em;">
-    <div style="display:flex;gap:0.8em;font-size:0.6em;color:#506070;">
-      <span><span style="background:rgba(239,83,80,0.15);color:#EF5350;padding:0.05em 0.35em;border-radius:8px;">🔴</span> ลับมาก</span>
-      <span><span style="background:rgba(255,167,38,0.15);color:#FFA726;padding:0.05em 0.35em;border-radius:8px;">🟡</span> ภายใน</span>
-      <span><span style="background:rgba(0,188,212,0.12);color:#00BCD4;padding:0.05em 0.35em;border-radius:8px;">🔵</span> ทั่วไป</span>
+  <div style="display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;">
+    <div style="display:flex;gap:0.6em;font-size:0.56em;color:#506070;">
+      <span><span style="background:rgba(239,83,80,0.15);color:#EF5350;padding:0.04em 0.3em;border-radius:6px;">🔴</span> ลับมาก</span>
+      <span><span style="background:rgba(255,167,38,0.15);color:#FFA726;padding:0.04em 0.3em;border-radius:6px;">🟡</span> ภายใน</span>
+      <span><span style="background:rgba(0,188,212,0.12);color:#00BCD4;padding:0.04em 0.3em;border-radius:6px;">🔵</span> ทั่วไป</span>
     </div>
-    <div style="font-size:0.58em;color:#3A5060;">📍 Source: Microsoft Graph API · Extracted: Apr 2026 · Confidential — Internal Use Only</div>
+    <div style="font-size:0.54em;color:#3A5060;">📍 Graph API · Apr 2026 · Confidential</div>
   </div>
 
-</div>
-
-</div>
-</div>
+</div><!-- end panel 4 -->
+</div><!-- end main box -->
+</div><!-- end outer -->
 
 <script>
-const mc={1:{col:'#7C4DFF',rgb:'124,77,255'},2:{col:'#1E88E5',rgb:'30,136,229'},3:{col:'#00BCD4',rgb:'0,188,212'}};
+const mc={
+  1:{col:'#EF5350',rgb:'239,83,80'},
+  2:{col:'#00BCD4',rgb:'0,188,212'},
+  3:{col:'#7C4DFF',rgb:'124,77,255'},
+  4:{col:'#FFB300',rgb:'255,179,0'}
+};
 function changeMockup(n){
-  for(let i=1;i<=3;i++){
-    document.getElementById('panel-mock-'+i).style.display='none';
+  for(let i=1;i<=4;i++){
+    const p=document.getElementById('panel-mock-'+i);
+    if(p)p.style.display='none';
     const b=document.getElementById('btn-mock-'+i);
-    b.style.border='2px solid transparent';b.style.background='rgba(255,255,255,0.04)';
+    if(b){b.style.border='2px solid transparent';b.style.background='rgba(255,255,255,0.04)';}
   }
   const p=document.getElementById('panel-mock-'+n);
-  p.style.display=(n===3)?'flex':'block';
+  if(p)p.style.display=(n===4)?'flex':'block';
   const b=document.getElementById('btn-mock-'+n);const c=mc[n];
-  b.style.border='2px solid '+c.col;
-  b.style.background='linear-gradient(135deg,rgba('+c.rgb+',0.25),rgba('+c.rgb+',0.1))';
+  if(b){b.style.border='2px solid '+c.col;b.style.background='linear-gradient(135deg,rgba('+c.rgb+',0.22),rgba('+c.rgb+',0.08))';}
 }
-document.addEventListener('DOMContentLoaded',()=>{changeMockup(1);startP1();startP2();});
+document.addEventListener('DOMContentLoaded',()=>{changeMockup(1);startP1();startP2();startP3();});
 
+/* ── Panel 1: Retention ── */
 function startP1(){
-  const files=[{name:'Budget_Q4_2025.xlsx',icon:'📊'},{name:'MOU_Digital_ID.pdf',icon:'📄'},{name:'Staff_2025.csv',icon:'📋'},{name:'TOR_จ้างพัฒนา.pdf',icon:'📑'},{name:'1212_Q1_Complaint.csv',icon:'💬'},{name:'ใบเสร็จ_2025_001.pdf',icon:'💵'},{name:'Board_Meeting_Mar.docx',icon:'🤝'},{name:'HR_Contract_2025.pdf',icon:'👥'}];
-  const clsLabels=['🔴','🟡','🟡','🟡','🔴','🔵','🟡','🔴'];
-  const dtLabels=['💵','📝','👥','🤝','💵','🤝','🤝','👥'];
-  let fi=0,cn={r:0,i:0,p:0},dt={b:0,t:0,r:0,h:0,o:0};
-  const q=document.getElementById('file-queue');
-  function addFile(){
-    const f=files[fi%files.length];
-    const div=document.createElement('div');
-    div.style.cssText='display:flex;align-items:center;gap:0.3em;background:rgba(0,188,212,0.06);border:1px solid rgba(0,188,212,0.14);border-radius:4px;padding:0.16em 0.32em;animation:fileSlide 0.4s ease;flex-shrink:0;';
-    div.innerHTML=`<span style="font-size:0.88em;">${f.icon}</span><span style="font-size:0.62em;color:#A0B4C8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${f.name}</span>`;
-    q.appendChild(div);if(q.children.length>6)q.removeChild(q.firstChild);
-    document.getElementById('cls-current').textContent=f.icon+' '+f.name;
-    const cl=clsLabels[fi%files.length];
-    if(cl==='🔴')cn.r++;else if(cl==='🟡')cn.i++;else cn.p++;
-    document.getElementById('cls-r-n').textContent=cn.r;
-    document.getElementById('cls-i-n').textContent=cn.i;
-    document.getElementById('cls-p-n').textContent=cn.p;
-    const dl=dtLabels[fi%files.length];
-    if(dl==='🤝')dt.b++;else if(dl==='📝')dt.t++;else if(dl==='💵')dt.r++;else if(dl==='👥')dt.h++;else dt.o++;
-    document.getElementById('dt-b-n').textContent=dt.b;
-    document.getElementById('dt-t-n').textContent=dt.t;
-    document.getElementById('dt-r-n').textContent=dt.r;
-    document.getElementById('dt-h-n').textContent=dt.h;
-    document.getElementById('dt-o-n').textContent=dt.o;
-    fi++;
-  }
-  addFile();setInterval(addFile,1800);
-}
-
-function startP2(){
-  let r1=0,r2=0,r3=0,r4=0,pending=0,approved=0,actioned=0;
-  const notifs=[
-    {msg:'📦 Budget_2018.xlsx ครบ 7 ปี — ขอ Approve Archive',from:'CISO',col:'#EF5350',rule:1},
-    {msg:'🟡 Report_2021.pdf ไม่ถูกเปิด 3 ปี — ยังใช้งานอยู่?',from:'DAC Team',col:'#FFA726',rule:2},
-    {msg:'⚠️ Staff_List.csv ไม่มี Encrypt — กรุณา Action!',from:'HR Owner',col:'#7C4DFF',rule:3},
-    {msg:'📦 MOU_2019.docx ครบ 7 ปี — ขอ Approve Archive',from:'Legal',col:'#EF5350',rule:1},
-    {msg:'🔵 Guideline_2018.pdf ครบ 5 ปี — ยืนยันลบ?',from:'Policy Team',col:'#00BCD4',rule:4},
-    {msg:'✅ Budget_2018.xlsx — Approved Archive โดย CISO',from:'CISO',col:'#00E676',approved:true},
-    {msg:'🔒 1212_PII.csv — Force Encrypted แล้ว',from:'System',col:'#7C4DFF',rule:3,done:true},
+  const files=[
+    {name:'Budget_2018.xlsx',age:'7 ปี 2 เดือน',status:'🔴 เกินกำหนด',statusCol:'#EF5350',owner:'ฝ่ายการเงิน'},
+    {name:'Staff_Dir_2019.csv',age:'6 ปี 8 เดือน',status:'🔴 เกินกำหนด',statusCol:'#EF5350',owner:'ฝ่าย HR'},
+    {name:'Report_Q2_2022.pdf',age:'3 ปี 10 เดือน',status:'🟡 ใกล้ครบ',statusCol:'#FFA726',owner:'ทีม DAC'},
+    {name:'MOU_Digital_2024.pdf',age:'1 ปี 2 เดือน',status:'✅ ปกติ',statusCol:'#00E676',owner:'Legal'},
+    {name:'TOR_AI_2025.pdf',age:'4 เดือน',status:'✅ ปกติ',statusCol:'#00E676',owner:'ฝ่ายจัดซื้อ'},
+    {name:'Complaint_Q1_2020.csv',age:'5 ปี 3 เดือน',status:'🟡 ใกล้ครบ',statusCol:'#FFA726',owner:'1212'},
   ];
-  let ni=0;
-  const feed=document.getElementById('notif-feed');
+  const notifs=[
+    {msg:'📦 Budget_2018.xlsx ครบ 7 ปี',action:'→ รอ Approve Archive จาก CISO',col:'#EF5350'},
+    {msg:'⚠️ Staff_Dir_2019.csv มี PII',action:'→ Force Review ก่อน Archive',col:'#7C4DFF'},
+    {msg:'📋 Report_Q2_2022 ใกล้ครบ 4 ปี',action:'→ แจ้ง DAC Team ล่วงหน้า',col:'#FFA726'},
+    {msg:'✅ MOU_2021.docx — Approved',action:'→ Archived เรียบร้อย',col:'#00E676'},
+  ];
+  let over=0,soon=0,ok=0;
+  const list=document.getElementById('ret-list');
+  const notifEl=document.getElementById('ret-notif');
+  let fi=0,ni=0;
+
+  files.forEach(f=>{
+    if(f.status.includes('🔴'))over++;
+    else if(f.status.includes('🟡'))soon++;
+    else ok++;
+    const row=document.createElement('div');
+    row.style.cssText='display:grid;grid-template-columns:2fr 0.8fr 1fr;gap:0.15em;background:rgba(255,255,255,0.02);border-radius:4px;padding:0.12em 0.2em;font-size:0.58em;align-items:center;animation:rowIn 0.4s ease;';
+    row.innerHTML=`<span style="color:#A0B4C8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${f.name}</span><span style="color:#607080;">${f.age}</span><span style="color:${f.statusCol};font-weight:600;font-size:0.9em;">${f.status}</span>`;
+    list.appendChild(row);
+  });
+  document.getElementById('ret-cnt-over').textContent=over;
+  document.getElementById('ret-cnt-soon').textContent=soon;
+  document.getElementById('ret-cnt-ok').textContent=ok;
+
   function addNotif(){
     const n=notifs[ni%notifs.length];ni++;
-    if(n.rule===1)r1++;if(n.rule===2)r2++;if(n.rule===3)r3++;if(n.rule===4)r4++;
-    document.getElementById('r1-found').textContent=r1;
-    document.getElementById('r2-found').textContent=r2;
-    document.getElementById('r3-found').textContent=r3;
-    document.getElementById('r4-found').textContent=r4;
-    if(n.approved){approved++;actioned++;}else if(n.done){actioned++;}else{pending++;}
-    document.getElementById('sum-pending').textContent=pending;
-    document.getElementById('sum-approved').textContent=approved;
-    document.getElementById('sum-action').textContent=actioned;
     const div=document.createElement('div');
-    div.style.cssText=`background:rgba(255,255,255,0.02);border:1px solid ${n.col}30;border-left:2px solid ${n.col};border-radius:6px;padding:0.25em 0.4em;animation:notifPop 0.4s ease;`;
-    div.innerHTML=`<div style="font-size:0.63em;color:${n.col};font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${n.msg}</div><div style="font-size:0.57em;color:#456070;margin-top:0.06em;">→ แจ้ง: ${n.from}</div>`;
-    feed.insertBefore(div,feed.firstChild);
-    if(feed.children.length>5)feed.removeChild(feed.lastChild);
+    div.style.cssText=`background:rgba(255,255,255,0.02);border-left:2px solid ${n.col};border-radius:0 5px 5px 0;padding:0.2em 0.35em;animation:notifPop 0.4s ease;`;
+    div.innerHTML=`<div style="font-size:0.6em;color:${n.col};font-weight:600;">${n.msg}</div><div style="font-size:0.55em;color:#456070;">${n.action}</div>`;
+    notifEl.insertBefore(div,notifEl.firstChild);
+    if(notifEl.children.length>3)notifEl.removeChild(notifEl.lastChild);
   }
-  addNotif();setInterval(addNotif,2500);
+  addNotif();setInterval(addNotif,2800);
+}
+
+/* ── Panel 2: Classification ── */
+function startP2(){
+  const files=[
+    {name:'Budget_Q4_2025.xlsx',label:'🔴 ลับมาก',labelCol:'#EF5350',conf:'94%'},
+    {name:'Staff_2025.csv',label:'🔴 ลับมาก',labelCol:'#EF5350',conf:'97%'},
+    {name:'TOR_AI_2025.pdf',label:'🟡 ภายใน',labelCol:'#FFA726',conf:'89%'},
+    {name:'ETDA_Report_2567.pdf',label:'🔵 ทั่วไป',labelCol:'#00BCD4',conf:'99%'},
+    {name:'Board_Mar_2568.docx',label:'🟡 ภายใน',labelCol:'#FFA726',conf:'91%'},
+    {name:'1212_Complaint.csv',label:'🔴 ลับมาก',labelCol:'#EF5350',conf:'96%'},
+  ];
+  const list=document.getElementById('cls-list');
+  files.forEach((f,i)=>{
+    setTimeout(()=>{
+      const row=document.createElement('div');
+      row.style.cssText='display:grid;grid-template-columns:2fr 1fr 0.8fr;gap:0.15em;background:rgba(255,255,255,0.02);border-radius:4px;padding:0.12em 0.2em;font-size:0.58em;align-items:center;animation:rowIn 0.4s ease;';
+      row.innerHTML=`<span style="color:#A0B4C8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${f.name}</span><span style="color:${f.labelCol};font-weight:600;">${f.label}</span><span style="color:#607080;">${f.conf}</span>`;
+      list.appendChild(row);
+      document.getElementById('cls-reading').textContent=f.name;
+    },i*600);
+  });
+}
+
+/* ── Panel 3: DocType ── */
+function startP3(){
+  const files=[
+    {name:'Board_Meeting_Mar.docx',type:'🤝 ประชุมบอร์ด',typeCol:'#FFB300',conf:'92%'},
+    {name:'TOR_จ้างพัฒนา.pdf',type:'📝 TOR',typeCol:'#64B5F6',conf:'88%'},
+    {name:'ใบเสร็จ_001.pdf',type:'💵 ใบเสร็จ',typeCol:'#00E676',conf:'97%'},
+    {name:'HR_Contract_2025.pdf',type:'👥 HR Doc',typeCol:'#9B72FF',conf:'94%'},
+    {name:'1212_Q1.csv',type:'📄 อื่นๆ',typeCol:'#78909C',conf:'78%'},
+    {name:'Budget_Q4.xlsx',type:'📄 อื่นๆ',typeCol:'#78909C',conf:'72%'},
+  ];
+  const cnts={b:0,t:0,r:0,h:0,o:0};
+  const list=document.getElementById('doc-list');
+  files.forEach((f,i)=>{
+    setTimeout(()=>{
+      const row=document.createElement('div');
+      row.style.cssText='display:grid;grid-template-columns:2fr 1fr 0.8fr;gap:0.15em;background:rgba(255,255,255,0.02);border-radius:4px;padding:0.12em 0.2em;font-size:0.58em;align-items:center;animation:rowIn 0.4s ease;';
+      row.innerHTML=`<span style="color:#A0B4C8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${f.name}</span><span style="color:${f.typeCol};font-weight:600;font-size:0.88em;">${f.type}</span><span style="color:#607080;">${f.conf}</span>`;
+      list.appendChild(row);
+      if(f.type.includes('ประชุม'))cnts.b++;
+      else if(f.type.includes('TOR'))cnts.t++;
+      else if(f.type.includes('ใบเสร็จ'))cnts.r++;
+      else if(f.type.includes('HR'))cnts.h++;
+      else cnts.o++;
+      document.getElementById('doc-b').textContent=cnts.b;
+      document.getElementById('doc-t').textContent=cnts.t;
+      document.getElementById('doc-r').textContent=cnts.r;
+      document.getElementById('doc-h').textContent=cnts.h;
+      document.getElementById('doc-o').textContent=cnts.o;
+    },i*700);
+  });
 }
 </script>
 ```
